@@ -1,0 +1,226 @@
+.projects-tiles {
+    display: block;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 18px;
+
+    box-shadow: 0px 0px 13.8px 0px #0000000D;
+}
+
+.projects-tiles__row {
+    display: grid;
+    width: 100%;
+}
+
+.projects-tiles__row:nth-child(1) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    min-height: 277px;
+    margin-bottom: 13px;
+}
+
+.projects-tiles__row:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    min-height: 301px;
+}
+
+.projects-tiles__link {
+    display: flex;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.projects-tiles__tile {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    padding: 20px 20px 45px 38px;
+
+    background-color: var(--white, #FFFFFF);
+
+    border-radius: var(--border-radius-large, 30px);
+}
+
+.projects-tiles__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+.projects-tiles__num {
+    letter-spacing: -0.54px;
+}
+
+.projects-tiles__title-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.projects-tiles__title {
+    margin-bottom: 33px;
+
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.projects-tiles__description {
+    line-height: 18px;
+    letter-spacing: -0.54px;
+}
+
+.projects-tiles__image_01 {
+    width: 60px;
+    height: 48px;
+
+    background: url("../images/project-tile_01.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects-tiles__image_02 {
+    width: 42px;
+    height: 40px;
+
+    background: url("../images/project-tile_02.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects-tiles__image_03 {
+    width: 40px;
+    height: 44px;
+
+    background: url("../images/project-tile_03.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects-tiles__image_04 {
+    width: 51px;
+    height: 41px;
+
+    background: url("../images/project-tile_04.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects-tiles__image_05 {
+    width: 56px;
+    height: 42px;
+
+    background: url("../images/project-tile_05.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects-tiles__link:hover .projects-tiles__tile  {
+    color: var(--white, #FFFFFF);
+
+    background-color: var(--green, #37CDAF);
+}
+
+.projects-tiles__link:hover .projects-tiles__image_01 {
+    background: url("../images/project-tile_01-hover.svg");
+}
+
+.projects-tiles__link:hover .projects-tiles__image_02 {
+    background: url("../images/project-tile_02-hover.svg");
+}
+
+.projects-tiles__link:hover .projects-tiles__image_03 {
+    background: url("../images/project-tile_03-hover.svg");
+}
+
+.projects-tiles__link:hover .projects-tiles__image_04 {
+    background: url("../images/project-tile_04-hover.svg");
+}
+
+.projects-tiles__link:hover .projects-tiles__image_05 {
+    background: url("../images/project-tile_05-hover.svg");
+}
+
+@media (max-width: 800px) {
+    .projects-tiles {
+        font-size: 12px;
+
+        line-height: 14px;
+        letter-spacing: -0.36px;
+    }
+
+    .projects-tiles__row {
+        display: block;
+    }
+
+    .projects-tiles__row:nth-child(1) {
+        min-height: 200px;
+        margin-bottom: 0;
+    }
+
+    .projects-tiles__tile {
+        width: 100%;
+        min-height: 200px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 21px 17px 49px 32px;
+    }
+
+    .projects-tiles__header {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .projects-tiles__title {
+        margin-bottom: 20px;
+    }
+
+    .projects-tiles__image_01 {
+        width: 51px;
+        height: 41px;
+    }
+
+    .projects-tiles__image_02 {
+        width: 42px;
+        height: 39px;
+    }
+
+    .projects-tiles__image_03 {
+        width: 31px;
+        height: 35px;
+    }
+
+    .projects-tiles__image_04 {
+        width: 36px;
+        height: 44px;
+    }
+
+    .projects-tiles__image_05 {
+        width: 52px;
+        height: 39px;
+    }
+
+    .projects-tiles__title {
+        font-size: 24px;;
+
+        line-height: 26px
+    }
+
+
+}
