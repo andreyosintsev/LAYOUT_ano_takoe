@@ -59,7 +59,7 @@
     position: absolute;
     width: 0;
     height: 0;
-   
+
 
     opacity: 0;
 }
@@ -73,11 +73,11 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    
-    border: 1px solid #C2C2C2;
-    border-radius: var(--border-radius-xxsmall, 6px); 
 
-    transition: all 0.3s ease;    
+    border: 1px solid #C2C2C2;
+    border-radius: var(--border-radius-xxsmall, 6px);
+
+    transition: all 0.3s ease;
 }
 
 .form__radio:checked + .form__radio-item_custom::after {
@@ -90,7 +90,7 @@
     width: 24px;
     height: 24px;
 
-    background: url("../../../common/images/check.svg") no-repeat center;
+    background: url("../images/check.svg") no-repeat center;
 }
 
 .form__radio-item:hover .form__radio-item_custom  {
@@ -102,7 +102,7 @@
 
     font-size: 15px;
 
-    line-height: 18px;   
+    line-height: 18px;
 }
 
 .form__text-p {
@@ -163,7 +163,7 @@
     font-family: var(--text-color-main, sans-serif);
     font-weight: 300;
 
-    line-height: 28px;    
+    line-height: 28px;
 
     background-color: var(--button-outlined-background, #FFFFFF);
 
@@ -206,7 +206,7 @@
     font-family: var(--text-color-main, sans-serif);
     font-weight: 300;
 }
-  
+
 .form__input::-webkit-inner-spin-button, .form__input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -278,7 +278,7 @@
 
         font-size: 18px;
         line-height: 21px;
-        
+
         text-align: center;
     }
 
@@ -310,9 +310,9 @@
 
     .form__payment-sums {
         display: grid;
-    
+
         grid-template-columns: repeat(2, 1fr);
-    
+
         margin-bottom: 9px;
     }
 
@@ -339,7 +339,7 @@
         margin-right: 0;
         margin-bottom: 5px;
     }
-    
+
     .form__payment-sum:nth-child(5) {
         margin-right: 0;
         margin-bottom: 0;
@@ -349,7 +349,7 @@
         padding: 15px 25px;
 
         font-size: 18px;
-        
+
         line-height: 18px;
 
         border-radius: var(--border-radius-small, 15px);
@@ -362,7 +362,7 @@
     .input.form__payment-sum::after {
         top: 19px;
         right: 15px;
-    
+
         font-size: 18px;
     }
 
@@ -394,11 +394,11 @@
     .form__payment-method-image {
         height: 35px;
     }
-    
+
     .form__payment-method-image_sbp {
         width: 48px;
     }
-    
+
     .form__payment-method-image_yad {
         width: 74px;
     }

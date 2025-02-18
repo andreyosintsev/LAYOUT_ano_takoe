@@ -32,11 +32,11 @@
 }
 
 .card-slider__button_prev {
-    background-image: url("../../../common/images/left.svg");
+    background-image: url("../images/left.svg");
 }
 
 .card-slider__button_next {
-    background-image: url("../../../common/images/right.svg");    
+    background-image: url("../images/right.svg");
 }
 
 .card-slider__button_disabled {

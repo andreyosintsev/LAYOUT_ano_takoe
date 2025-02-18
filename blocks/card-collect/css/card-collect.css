@@ -21,7 +21,7 @@
 .card-collect__image {
     position: relative;
     margin-right: 54px;
-        
+
     border-radius: var(--border-radius-large, 30px);
 
     overflow: hidden;
@@ -36,7 +36,7 @@
     left:50%;
     transform: translate(-50%, -50%);
 
-    object-fit: cover;   
+    object-fit: cover;
 }
 
 .card-collect__content {
@@ -48,7 +48,7 @@
     margin-bottom: 17px;
 
     font-weight: 400;
-    line-height: 21px;    
+    line-height: 21px;
 }
 
 .card-collect__title {
@@ -56,7 +56,7 @@
 
     font-size: 32px;
     font-weight: 400;
-    
+
     line-height: 38px;
 }
 
@@ -65,7 +65,7 @@
 
     color: var(--gray, #A6A6A6);
 
-    line-height: 21px;    
+    line-height: 21px;
 }
 
 .card-collect__value {
@@ -73,7 +73,7 @@
 
     font-size: 20px;
 
-    line-height: 23px;    
+    line-height: 23px;
 }
 
 .card-collect__progress {
@@ -91,7 +91,7 @@
 .card-collect__progress-scale-tick {
     font-size: 15px;
 
-    line-height: 18px;   
+    line-height: 18px;
 }
 
 .card-collect__progress-bar {
@@ -208,7 +208,7 @@
     height: 16px;
     margin-right: 4px;
 
-    background-image: url("../../../common/images/flash.svg");
+    background-image: url("../images/flash.svg");
 }
 
 @media (max-width: 800px) {
@@ -218,13 +218,13 @@
 
         padding: 17px 14px 40px;
     }
-    
+
     .card-collect__image {
         position: relative;
         margin: 0 0 20px 0;
 
         border-radius: var(--border-radius-small, 15px);
-        
+
         overflow: visible;
     }
 
@@ -295,7 +295,7 @@
     .card-collect__progress-underscale-tick {
         font-size: 18px;
 
-        line-height: 21px;    
+        line-height: 21px;
     }
 
     .card-collect__history {

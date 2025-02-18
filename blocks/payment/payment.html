@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Block</title>
-    <link rel="stylesheet" href="../../common/css/normalize.css">
-    <link rel="stylesheet" href="../../common/css/consts.css">
-    <link rel="stylesheet" href="../logo/css/logo.css">
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
     <link rel="stylesheet" href="../button/css/button.css">
     <link rel="stylesheet" href="../pagination/css/pagination.css">
     <link rel="stylesheet" href="./css/payment.css">
@@ -15,7 +14,7 @@
     <!--Первая платежная форма-->
     <div class="payment payment_stage1">
         <div class="payment__title">
-            <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект            
+            <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
         </div>
         <form class="form payment__form" name="payment">
             <div class="form__recurrence">
@@ -51,7 +50,7 @@
                 <div class="button form__payment-sum button_outlined">1000 ₽</div>
                 <div class="button form__payment-sum button_outlined">3000 ₽</div>
                 <div class="input form__payment-sum">
-                    <input 
+                    <input
                         class="form__input form__input_sum"
                         type="number"
                         inputmode="numeric"
@@ -59,7 +58,7 @@
                         placeholder="Другая сумма">
                 </div>
             </div>
-            <button 
+            <button
                 class="button form__button"
                 type="button">
                 Далее
@@ -69,20 +68,20 @@
             <ul class="pagination__items pagination__items_disabled">
                 <li class="pagination__item pagination__item_active"></li>
                 <li class="pagination__item"></li>
-            </ul>    
+            </ul>
         </div>
     </div>
     <!--Вторая платежная форма-->
     <div class="payment payment_stage2">
         <div class="payment__title">
-            <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект            
+            <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
         </div>
         <form class="form payment__form" name="payment2">
-            <input 
+            <input
                 class="form__input form__input_name"
                 type="text"
                 placeholder="Ваше имя">
-            <input 
+            <input
                 class="form__input form__input_email"
                 type="text"
                 placeholder="Ваш e-mail (для чека)">
@@ -90,7 +89,7 @@
                 <div class="button form__payment-method button_outlined">
                     <div class="form__payment-method-image">
                         <img class="form__payment-method-image-img form__payment-method-image_card"
-                            src="../../common/images/payment/card.png"
+                            src="./images/card.png"
                             alt="Банковская карта">
                     </div>
                     <div class="form__payment-method-label">
@@ -100,17 +99,17 @@
                 <div class="button form__payment-method button_outlined">
                     <div class="form__payment-method-image">
                         <img class="form__payment-method-image-img form__payment-method-image_sbp"
-                            src="../../common/images/payment/sbp.png"
+                            src="./images/sbp.png"
                             alt="СБП платеж">
                     </div>
                     <div class="form__payment-method-label">
                         СБП платеж
                     </div>
-                </div>                
+                </div>
                 <div class="button form__payment-method button_outlined">
                     <div class="form__payment-method-image">
                         <img class="form__payment-method-image-img form__payment-method-image_yad"
-                            src="../../common/images/payment/yad.png"
+                            src="./images/yad.png"
                             alt="Яндекс.Деньги">
                     </div>
                     <div class="form__payment-method-label">
@@ -118,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <button 
+            <button
                 class="button form__button"
                 type="submit">
                 ПОМОЧЬ
@@ -128,7 +127,7 @@
             <ul class="pagination__items pagination__items_disabled">
                 <li class="pagination__item"></li>
                 <li class="pagination__item pagination__item_active"></li>
-            </ul>    
+            </ul>
         </div>
     </div>
 </body>

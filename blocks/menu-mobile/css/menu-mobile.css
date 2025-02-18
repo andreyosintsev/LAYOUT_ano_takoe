@@ -27,7 +27,7 @@
     top: 42px;
     right: 30px;
 
-    background-image: url("../../../common/images/close.svg");
+    background-image: url("../images/close.svg");
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -35,13 +35,12 @@
 }
 
 .menu-mobile__close:hover, .menu-mobile__close:focus {
-    background-image: url("../../../common/images/close_hover.svg");
+    background-image: url("../images/close_hover.svg");
 }
 
 .logo {
     width: 146px;
     height: 90px;
-    margin-bottom: 49px;
 }
 
 .menu-mobile__contacts {
@@ -77,7 +76,7 @@
 
     text-align: center;
     text-transform: uppercase;
-    
+
     list-style: none;
 }
 
