@@ -1,0 +1,405 @@
+.hidden {
+    display: none !important;
+}
+
+.payment {
+    max-width: 600px;
+    padding: 55px 45px 40px;
+
+
+    color: var(--text-color-main, #000000);
+    font-size: 20px;
+    font-family: var(--text-family-main, sans-serif);
+    font-weight: 300;
+
+    background-color: var(--off-white, #FBFBFB);
+
+    border-radius: var(--border-radius-xlarge, 35px);
+}
+
+.payment__title {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+
+    line-height: 28px;
+}
+
+.payment__title_strong {
+    font-weight: 500;
+}
+
+.form {
+    margin-bottom: 25px;
+}
+
+.form__label {
+    margin-left: 15px;
+
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.form__recurrence {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.form__radio-item {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+}
+
+.form__radio {
+    position: absolute;
+    width: 0;
+    height: 0;
+   
+
+    opacity: 0;
+}
+
+.form__radio-item:last-of-type {
+    margin-right: 0;
+}
+
+.form__radio-item_custom {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    
+    border: 1px solid #C2C2C2;
+    border-radius: var(--border-radius-xxsmall, 6px); 
+
+    transition: all 0.3s ease;    
+}
+
+.form__radio:checked + .form__radio-item_custom::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+
+    background: url("../../../common/images/check.svg") no-repeat center;
+}
+
+.form__radio-item:hover .form__radio-item_custom  {
+    border-color: var(--gray, #A6A6A6);
+}
+
+.form__text {
+    margin-bottom: 30px;
+
+    font-size: 15px;
+
+    line-height: 18px;   
+}
+
+.form__text-p {
+    margin: 0;
+    padding: 0;
+}
+
+.form__subtitle {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    line-height: 23px;
+}
+
+.form__payment-sums {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 28px;
+}
+
+.form__payment-sum {
+    margin-right: 24px;
+    margin-bottom: 12px;
+}
+
+.form__payment-sum:nth-child(3) {
+    margin-right: 0;
+}
+
+.form__payment-sum:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.form__payment-sum:nth-child(5) {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.form__payment-sum:last-child {
+    grid-column: span 2; /* Занимает всю ширину контейнера */
+}
+
+.form__input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 12px 24px;
+
+    color: var(--button-outlined-color, #000000);
+    font-size: 24px;
+    font-family: var(--text-color-main, sans-serif);
+    font-weight: 300;
+
+    line-height: 28px;    
+
+    background-color: var(--button-outlined-background, #FFFFFF);
+
+    border: 1px solid var(--button-outlined-border, #DCDCDC);
+    border-radius: var(--border-radius, 20px);
+
+    outline: none;
+}
+
+.form__payment-sum .form__input::placeholder {
+    color: var(--text-color-main, #000000);
+}
+
+.form__input_sum {
+    padding-right: 45px;
+}
+
+.form__input_name {
+    margin-bottom: 7px;
+    padding: 18px 25px;
+}
+
+.form__input_email {
+    margin-bottom: 15px;
+    padding: 18px 25px
+}
+
+.input.form__payment-sum {
+    position: relative;
+}
+
+.input.form__payment-sum::after {
+    position: absolute;
+    content: '₽';
+    top: 14px;
+    right: 21px;
+
+    color: var(--button-outlined-color, #000000);
+    font-size: 24px;
+    font-family: var(--text-color-main, sans-serif);
+    font-weight: 300;
+}
+  
+.form__input::-webkit-inner-spin-button, .form__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form__button {
+    width: 100%;
+    padding: 17px 0;
+
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.form__payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+    margin-bottom: 28px;
+}
+
+.form__payment-method {
+    display: block;
+    margin-right: 13px;
+    padding: 17px 10px;
+
+    border-radius: var(--border-radius-smaller, 14px);
+}
+
+.form__payment-method:last-child {
+    margin-right: 0;
+}
+
+.form__payment-method-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.form__payment-method-image_card {
+    width: 141px;
+}
+
+.form__payment-method-image_sbp {
+    width: 94px;
+}
+
+.form__payment-method-image_yad {
+    width: 107px;
+}
+
+.form__payment-method-label {
+    color: var(--text-color-main, #000000);
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 15px;
+}
+
+@media (max-width: 600px) {
+    .payment {
+        padding: 30px 34px 21px;
+    }
+
+    .payment__title {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 21px;
+        
+        text-align: center;
+    }
+
+    .form__recurrence {
+        margin-bottom: 8px;
+    }
+
+    .form__text {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+
+        line-height: 14px;
+
+        text-align: center;
+    }
+
+    .form__text-br {
+        display: none;
+    }
+
+    .form__subtitle {
+        font-size: 18px;
+
+        line-height: 21px;
+
+        text-align: center;
+    }
+
+    .form__payment-sums {
+        display: grid;
+    
+        grid-template-columns: repeat(2, 1fr);
+    
+        margin-bottom: 9px;
+    }
+
+    .form__payment-sum {
+        margin-right: 5px;
+        margin-bottom: 5px;
+
+        font-size: 18px;
+
+        line-height: 17px;
+
+        border-radius: var(--border-radius-small, 15px);
+    }
+
+    .form__payment-sum:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .form__payment-sum:nth-child(3) {
+        margin-right: 5px;
+    }
+
+    .form__payment-sum:nth-child(4) {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .form__payment-sum:nth-child(5) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .form__input {
+        padding: 15px 25px;
+
+        font-size: 18px;
+        
+        line-height: 18px;
+
+        border-radius: var(--border-radius-small, 15px);
+    }
+
+    .form__input_sum {
+        padding-right: 35px;
+    }
+
+    .input.form__payment-sum::after {
+        top: 19px;
+        right: 15px;
+    
+        font-size: 18px;
+    }
+
+    .form__button {
+        padding: 21px 0;
+    }
+
+    .form__payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .form__payment-methods {
+        margin-bottom: 19px;
+    }
+
+    .form__payment-method {
+        margin: 0 0 4px 0;
+        padding: 7px 10px 11px;
+    }
+
+    .form__payment-method:last-child {
+        margin: 0;
+    }
+
+    .form__payment-method-image_card {
+        width: 127px;
+    }
+
+    .form__payment-method-image {
+        height: 35px;
+    }
+    
+    .form__payment-method-image_sbp {
+        width: 48px;
+    }
+    
+    .form__payment-method-image_yad {
+        width: 74px;
+    }
+}

@@ -1,0 +1,34 @@
+.pagination__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.pagination__item {
+    width: 9px;
+    height: 9px;
+    margin-right: 16px;
+
+    background-color: var(--gray-light,#DCDCDC);
+    
+    border-radius: 50%;
+}
+
+.pagination__items:not(.pagination__items_disabled) .pagination__item:hover {
+    background-color: var(--green-light, #DBF6F1);
+
+    cursor: pointer;
+}
+
+.pagination__item:last-of-type {
+    margin-right: 0;
+}
+
+.pagination__item_active {
+    background-color: var(--green, #37CDAF);
+}

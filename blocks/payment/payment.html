@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Block</title>
+    <link rel="stylesheet" href="../../common/css/normalize.css">
+    <link rel="stylesheet" href="../../common/css/consts.css">
+    <link rel="stylesheet" href="../logo/css/logo.css">
+    <link rel="stylesheet" href="../button/css/button.css">
+    <link rel="stylesheet" href="../pagination/css/pagination.css">
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+<body style="background-color: lime;">
+    <!--Первая платежная форма-->
+    <div class="payment payment_stage1">
+        <div class="payment__title">
+            <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект            
+        </div>
+        <form class="form payment__form" name="payment">
+            <div class="form__recurrence">
+                <label class="form__radio-item">
+                    <input class="form__radio"
+                            type="radio"
+                            id="checkbox_once"
+                            name="recurrence"
+                            checked>
+                    <span class="form__radio-item_custom"></span>
+                    <span class="form__label">Помочь разово</span>
+                </label>
+                <label class="form__radio-item">
+                    <input class="form__radio"
+                            type="radio"
+                            id="checkbox_monthly"
+                            name="recurrence">
+                    <span class="form__radio-item_custom"></span>
+                    <span class="form__label">Помогать ежемесячно</span>
+                </label>
+            </div>
+            <div class="form__text">
+                <p class="form__text-p">
+                    Спасибо, что выбрали вариант ежемесячной помощи!
+                    <br class="form__text-br">
+                    При каждом следующем платеже вы получите e-mail уведомление.
+                </p>
+            </div>
+            <div class="form__subtitle">Сумма пожертвования</div>
+            <div class="form__payment-sums">
+                <div class="button form__payment-sum button_outlined">300 ₽</div>
+                <div class="button form__payment-sum button_outlined">500 ₽</div>
+                <div class="button form__payment-sum button_outlined">1000 ₽</div>
+                <div class="button form__payment-sum button_outlined">3000 ₽</div>
+                <div class="input form__payment-sum">
+                    <input 
+                        class="form__input form__input_sum"
+                        type="number"
+                        inputmode="numeric"
+                        pattern="\d*"
+                        placeholder="Другая сумма">
+                </div>
+            </div>
+            <button 
+                class="button form__button"
+                type="button">
+                Далее
+            </button>
+        </form>
+        <div class="pagination payment__navigation">
+            <ul class="pagination__items pagination__items_disabled">
+                <li class="pagination__item pagination__item_active"></li>
+                <li class="pagination__item"></li>
+            </ul>    
+        </div>
+    </div>
+    <!--Вторая платежная форма-->
+    <div class="payment payment_stage2">
+        <div class="payment__title">
+            <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект            
+        </div>
+        <form class="form payment__form" name="payment2">
+            <input 
+                class="form__input form__input_name"
+                type="text"
+                placeholder="Ваше имя">
+            <input 
+                class="form__input form__input_email"
+                type="text"
+                placeholder="Ваш e-mail (для чека)">
+            <div class="form__payment-methods">
+                <div class="button form__payment-method button_outlined">
+                    <div class="form__payment-method-image">
+                        <img class="form__payment-method-image-img form__payment-method-image_card"
+                            src="../../common/images/payment/card.png"
+                            alt="Банковская карта">
+                    </div>
+                    <div class="form__payment-method-label">
+                        Банковская карта
+                    </div>
+                </div>
+                <div class="button form__payment-method button_outlined">
+                    <div class="form__payment-method-image">
+                        <img class="form__payment-method-image-img form__payment-method-image_sbp"
+                            src="../../common/images/payment/sbp.png"
+                            alt="СБП платеж">
+                    </div>
+                    <div class="form__payment-method-label">
+                        СБП платеж
+                    </div>
+                </div>                
+                <div class="button form__payment-method button_outlined">
+                    <div class="form__payment-method-image">
+                        <img class="form__payment-method-image-img form__payment-method-image_yad"
+                            src="../../common/images/payment/yad.png"
+                            alt="Яндекс.Деньги">
+                    </div>
+                    <div class="form__payment-method-label">
+                        Яндекс.Деньги
+                    </div>
+                </div>
+            </div>
+            <button 
+                class="button form__button"
+                type="submit">
+                ПОМОЧЬ
+            </button>
+        </form>
+        <div class="pagination payment__navigation">
+            <ul class="pagination__items pagination__items_disabled">
+                <li class="pagination__item"></li>
+                <li class="pagination__item pagination__item_active"></li>
+            </ul>    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АНО Такое - поможем там, где в нас нуждаются</title>
+
+    <link rel="stylesheet" href="./css/common/normalize.css">
+    <link rel="stylesheet" href="./css/common/consts.css">
+    <link rel="stylesheet" href="./css/blocks/logo.css">
+    <link rel="stylesheet" href="./css/blocks/button.css">
+    <link rel="stylesheet" href="./css/blocks/menu-main.css">
+    <link rel="stylesheet" href="./css/blocks/menu-mobile.css">
+    <link rel="stylesheet" href="./css/blocks/header.css">
+    <link rel="stylesheet" href="./css/blocks/payment.css">
+    <link rel="stylesheet" href="./css/blocks/section-title.css">
+    <link rel="stylesheet" href="./css/blocks/card-collect.css">
+    <link rel="stylesheet" href="./css/blocks/card-slider.css">
+    <link rel="stylesheet" href="./css/blocks/pagination.css">
+
+    <link rel="stylesheet" href="./css/blocks/footer.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
+</head>
+<body>
+    <div class="menu-mobile hidden">
+        <div class="menu-mobile__close"></div>
+        <div class="logo menu-mobile__logo">
+            <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
+                <img class="logo__image" src="../../../common/images/logo.png" alt="АНО ТАКОЕ">
+            </a>
+        </div>
+        <div class="menu-mobile__contacts">
+            <p class="menu-mobile__contacts-p">
+                +7 (925) 003 62 78
+            </p>
+            <p class="menu-mobile__contacts-p">
+                takoeano@yandex.ru
+            </p>
+        </div>
+        <ul class="menu-mobile__items">
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">О нас</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Сборы</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Проекты</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Новости</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Отчеты</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="logo">
+                <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
+                    <img class="logo__image" src="../../../common/images/logo.png" alt="АНО ТАКОЕ">
+                </a>
+            </div>
+            <nav class="menu-main menu-main_collapseable">
+                <ul class="menu-main__items">
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="О нас">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Требуется ваша помощь">
+                            Сборы
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Наши проекты">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Отчёты">
+                            Отчеты
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Новости и события">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="button button-help">ПОМОЧЬ<span class="button__heart"></span></div>
+            <div class="menu-mobile-button"></div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="hero">
+            <div class="hero__title">
+                <div class="hero__about">
+                    <span class="hero__info"></span>
+                    <a class="hero__info-link" href="#">Кто мы?</a>
+                </div>
+                <h1 class="hero__header">
+                    АНО «ТАКОЕ»
+                </h1>
+                <div class="hero__subtitle">
+                    Поможем там, где в нас нуждаются
+                </div>
+            </div>
+            <div class="payment hero__payment payment_stage1">
+                <div class="payment__title">
+                    <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
+                </div>
+                <form class="form payment__form" name="payment">
+                    <div class="form__recurrence">
+                        <label class="form__radio-item">
+                            <input class="form__radio"
+                                    type="radio"
+                                    id="checkbox_once"
+                                    name="recurrence"
+                                    checked>
+                            <span class="form__radio-item_custom"></span>
+                            <span class="form__label">Помочь разово</span>
+                        </label>
+                        <label class="form__radio-item">
+                            <input class="form__radio"
+                                    type="radio"
+                                    id="checkbox_monthly"
+                                    name="recurrence">
+                            <span class="form__radio-item_custom"></span>
+                            <span class="form__label">Помогать ежемесячно</span>
+                        </label>
+                    </div>
+                    <div class="form__text">
+                        <p class="form__text-p">
+                            Спасибо, что выбрали вариант ежемесячной помощи!
+                            <br class="form__text-br">
+                            При каждом следующем платеже вы получите e-mail уведомление.
+                        </p>
+                    </div>
+                    <div class="form__subtitle">Сумма пожертвования</div>
+                    <div class="form__payment-sums">
+                        <div class="button form__payment-sum button_outlined">300 ₽</div>
+                        <div class="button form__payment-sum button_outlined">500 ₽</div>
+                        <div class="button form__payment-sum button_outlined">1000 ₽</div>
+                        <div class="button form__payment-sum button_outlined">3000 ₽</div>
+                        <div class="input form__payment-sum">
+                            <input
+                                class="form__input form__input_sum"
+                                type="number"
+                                inputmode="numeric"
+                                pattern="\d*"
+                                placeholder="Другая сумма">
+                        </div>
+                    </div>
+                    <button
+                        class="button form__button"
+                        type="button">
+                        Далее
+                    </button>
+                </form>
+                <div class="pagination payment__navigation">
+                    <ul class="pagination__items pagination__items_disabled">
+                        <li class="pagination__item pagination__item_active"></li>
+                        <li class="pagination__item"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Вторая платежная форма-->
+            <div class="payment payment_stage2 hidden">
+                <div class="payment__title">
+                    <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
+                </div>
+                <form class="form payment__form" name="payment2">
+                    <input
+                        class="form__input form__input_name"
+                        type="text"
+                        placeholder="Ваше имя">
+                    <input
+                        class="form__input form__input_email"
+                        type="text"
+                        placeholder="Ваш e-mail (для чека)">
+                    <div class="form__payment-methods">
+                        <div class="button form__payment-method button_outlined">
+                            <div class="form__payment-method-image">
+                                <img class="form__payment-method-image-img form__payment-method-image_card"
+                                    src="../../common/images/payment/card.png"
+                                    alt="Банковская карта">
+                            </div>
+                            <div class="form__payment-method-label">
+                                Банковская карта
+                            </div>
+                        </div>
+                        <div class="button form__payment-method button_outlined">
+                            <div class="form__payment-method-image">
+                                <img class="form__payment-method-image-img form__payment-method-image_sbp"
+                                    src="../../common/images/payment/sbp.png"
+                                    alt="СБП платеж">
+                            </div>
+                            <div class="form__payment-method-label">
+                                СБП платеж
+                            </div>
+                        </div>
+                        <div class="button form__payment-method button_outlined">
+                            <div class="form__payment-method-image">
+                                <img class="form__payment-method-image-img form__payment-method-image_yad"
+                                    src="../../common/images/payment/yad.png"
+                                    alt="Яндекс.Деньги">
+                            </div>
+                            <div class="form__payment-method-label">
+                                Яндекс.Деньги
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="button form__button"
+                        type="submit">
+                        ПОМОЧЬ
+                    </button>
+                </form>
+                <div class="pagination payment__navigation">
+                    <ul class="pagination__items pagination__items_disabled">
+                        <li class="pagination__item"></li>
+                        <li class="pagination__item pagination__item_active"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card-slider content__slider">
+                <div class="card-slider__header">
+                    <div class="section-title card-slider__title">Срочные сборы</div>
+                    <div class="card-slider__buttons">
+                        <div class="card-slider__button card-slider__button_prev card-slider__button_disabled"></div>
+                        <div class="card-slider__button card-slider__button_next"></div>
+                    </div>
+                </div>
+                <div class="card-collect card-slider__card">
+                    <div class="card-collect__image">
+                        <img class="card-collect__image-img"
+                                src="../../common/images/card-collect/foto.png"
+                                alt="Фотография для сбора">
+                    </div>
+                    <div class="card-collect__content">
+                        <div class="card-collect__location">
+                            с. Куймынь, Липецкая область
+                        </div>
+                        <div class="card-collect__title">
+                            Иерей Вадим Пупынин
+                        </div>
+                        <div class="card-collect__name">
+                            программа:
+                        </div>
+                        <div class="card-collect__value">
+                            помощь храмам
+                        </div>
+                        <div class="card-collect__name">
+                            цель сбора:
+                        </div>
+                        <div class="card-collect__value">
+                            покупка штукатурки для реставрации стен церкви в честь Святой Троицы
+                        </div>
+                        <div class="card-collect__progress">
+                            <div class="card-collect__progress-scale">
+                                <div class="card-collect__progress-scale-tick">
+                                    Собрано
+                                </div>
+                                <div class="card-collect__progress-scale-tick">
+                                    Необходимо
+                                </div>
+                            </div>
+                            <div class="card-collect__progress-bar">
+                                <div class="card-collect__progress-current" style="width: 33%;">
+                                    33%
+                                </div>
+                            </div>
+                            <div class="card-collect__progress-underscale">
+                                <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                                    ₽ 198.000
+                                </div>
+                                <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                                    ₽ 600.000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-collect__footer">
+                            <div class="card-collect__history">
+                                <a
+                                    class="card-collect__history-link"
+                                    href="#"
+                                    title="История">
+                                    История
+                                </a>
+                            </div>
+                            <button class="button card-collect__button">
+                                Помочь<span class="button__heart"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-collect__urgent">
+                        <span class="card-collect__urgent-flash"></span>срочный сбор
+                    </div>
+                </div>
+                <div class="card-slider__pagination pagination">
+                    <ul class="pagination__items">
+                        <li class="pagination__item pagination__item_active"></li>
+                        <li class="pagination__item"></li>
+                        <li class="pagination__item"></li>
+                        <li class="pagination__item"></li>
+                        <li class="pagination__item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="logo logo_footer">
+                <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
+                    <img class="logo__image" src="../../../common/images/logo.png" alt="АНО ТАКОЕ">
+                </a>
+            </div>
+            <nav class="menu-bottom">
+                <ul class="menu-bottom__items">
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="О нас">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Новости и события">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Требуется ваша помощь">
+                            Сборы
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Отчёты">
+                            Отчеты
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Отчёты">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item"></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <a class="contacts__link" href="tel:+79250036278" title="Телефон для связи">+7 (925) 003 62 78</a>
+                <a class="contacts__link contacts__link_mailto" href="mailto:takoeano@yandex.ru" title="E-mail для связи">takoeano@yandex.ru</a>
+            </div>
+            <div class="info">
+                <div class="info__copyright">
+                    © 2025 — Автономная Некомерческая Организация  «ТАКОЕ»
+                </div>
+                <div class="info__termsofuse">
+                    <a class="info__link" href="#"  title="Просмотреть пользовательское соглашение">
+                        Пользовательское соглашение
+                    </a>
+                </div>
+                <div class="info__policy">
+                    <a class="info__link" href="#" title="Прочитать политику обработки персональных данных">
+                        Политика обработки персональных данных
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

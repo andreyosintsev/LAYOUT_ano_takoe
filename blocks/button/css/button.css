@@ -1,0 +1,72 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 21px 34px;
+
+    color: var(--button-normal-color, #FFFFFF);
+    font-family: var(--text-family-featured, sans-serif);
+    font-size: 20px;
+    font-weight: 500;
+
+    line-height: 24px;
+    text-align: center;
+
+    background-color: var(--button-normal-background, #37CDAF);
+
+    border-radius: var(--border-radius-button, 17px);
+
+    border: none;
+    /* outline: none; */
+
+    cursor: pointer;
+}
+
+.button:hover, .button:focus, .button:focus-visible {
+    background-color: var(--button-normal-background_hover, #5CE4C9);
+}
+
+.button__heart {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+
+    background-color: var(--white, #FFFFFF);
+
+    -webkit-mask-image: url("../../../common/images/heart.svg");
+    -moz-mask-image: url("../../../common/images/heart.svg");
+    mask-image: url("../../../common/images/heart.svg");
+    -webkit-mask-size: cover;
+    -moz-mask-size: cover;
+    mask-size: cover;
+}
+
+.button_outlined {
+    padding: 12px 0;
+
+    color: var(--button-outlined-color, #000000);
+    font-size: 24px;
+    font-family: var(--text-color-main, sans-serif);
+    font-weight: 300;
+
+    line-height: 28px;    
+
+    background-color: var(--button-outlined-background, #FFFFFF);
+
+    border: 1px solid var(--button-outlined-border, #DCDCDC);
+    border-radius: var(--border-radius, 20px);
+}
+
+.button_outlined:hover {
+    background-color: var(--button-outlined-background_hover, #E0E0E0);
+}
+
+@media (max-width: 900px) {
+    .button__heart {
+        width: 18px;
+        height: 18px;
+        margin-left: 7px;
+    }
+}

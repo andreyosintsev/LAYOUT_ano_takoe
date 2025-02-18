@@ -1,0 +1,308 @@
+.card-collect {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 32px 30px;
+
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 18px;
+    font-weight: 300;
+
+    background-color: var(--white, #FFFFFF);
+
+    box-shadow: 0px 0px 22.1px 0px #0000001F;
+    border-radius: var(--border-radius-large, 30px);
+}
+
+.card-collect__image {
+    position: relative;
+    margin-right: 54px;
+        
+    border-radius: var(--border-radius-large, 30px);
+
+    overflow: hidden;
+}
+
+.card-collect__image-img {
+    position: absolute;
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;   
+}
+
+.card-collect__content {
+    padding-top: 18px;
+    padding-right: 40px;
+}
+
+.card-collect__location {
+    margin-bottom: 17px;
+
+    font-weight: 400;
+    line-height: 21px;    
+}
+
+.card-collect__title {
+    margin-bottom: 29px;
+
+    font-size: 32px;
+    font-weight: 400;
+    
+    line-height: 38px;
+}
+
+.card-collect__name {
+    margin-bottom: 6px;
+
+    color: var(--gray, #A6A6A6);
+
+    line-height: 21px;    
+}
+
+.card-collect__value {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+    line-height: 23px;    
+}
+
+.card-collect__progress {
+    margin-bottom: 39px;
+    padding-top: 9px;
+}
+
+.card-collect__progress-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-collect__progress-scale-tick {
+    font-size: 15px;
+
+    line-height: 18px;   
+}
+
+.card-collect__progress-bar {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 8px;
+
+    background-color: var(--green-light, #DBF6F1);
+    border-radius: 17px;
+}
+
+.card-collect__progress-current {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+
+    color: var(--white, #FFFFFF);
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: var(--green, #37CDAF);
+    border-radius: 17px;
+}
+
+.card-collect__progress-underscale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-collect__progress-underscale-tick {
+    margin-right: 20px;
+
+    font-size: 35px;
+    font-weight: 500;
+
+    line-height: 41px;
+
+    white-space: nowrap;
+}
+
+.card-collect__progress-underscale-tick:last-child {
+    margin-right: 0;
+}
+
+.card-collect__progress-underscale-tick_current {
+    color: var(--green, #37CDAF);
+}
+
+.card-collect__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.card-collect__history-link{
+    display: inline-block;
+    padding: 0 2px 4px;
+
+    color: var(--link-normal-color, #3C3C3C);
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid var(--green, #37CDAF);
+}
+
+.card-collect__history-link:hover, .card-collect__history-link:focus {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+.card-collect__button {
+    text-transform: uppercase;
+}
+
+.button__heart {
+    width: 24px;
+    height: 24px;
+}
+
+.card-collect__urgent {
+    position: absolute;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    top: 13px;
+    right: 12px;
+    padding: 8px 20px;
+
+    color: var(--white, #FFFFFF);
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 15px;
+
+    background-color: var(--green, #37CDAF);
+
+    border-radius: 13px;
+
+}
+
+.card-collect__urgent-flash {
+    width: 12px;
+    height: 16px;
+    margin-right: 4px;
+
+    background-image: url("../../../common/images/flash.svg");
+}
+
+@media (max-width: 800px) {
+    .card-collect {
+        position: relative;
+        display: block;
+
+        padding: 17px 14px 40px;
+    }
+    
+    .card-collect__image {
+        position: relative;
+        margin: 0 0 20px 0;
+
+        border-radius: var(--border-radius-small, 15px);
+        
+        overflow: visible;
+    }
+
+    .card-collect__image-img {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        transform: none;
+    }
+
+    .card-collect__content {
+        padding: 0px 11px;
+    }
+
+    .card-collect__location {
+        margin-bottom: 15px;
+
+        font-size: 15px;
+
+        line-height: 18px;
+    }
+
+    .card-collect__title {
+        margin-bottom: 16px;
+
+        font-size: 24px;
+
+        line-height: 28px;
+    }
+
+    .card-collect__name {
+        margin-bottom: 4px;
+
+        font-size: 15px;
+
+        line-height: 18px;
+    }
+
+    .card-collect__value {
+        margin-bottom: 15px;
+
+        font-size: 18px;
+
+        line-height: 21px;
+    }
+
+    .card-collect__progress {
+        margin-bottom: 30px;
+        padding-top: 13px;
+    }
+
+    .card-collect__progress-scale {
+        margin-bottom: 4px;
+    }
+
+    .card-collect__progress-scale-tick {
+        font-size: 12px;
+
+        line-height: 14px;
+    }
+
+    .card-collect__progress-bar {
+        margin-bottom: 7px;
+    }
+
+    .card-collect__progress-underscale-tick {
+        font-size: 18px;
+
+        line-height: 21px;    
+    }
+
+    .card-collect__history {
+        display: none;
+    }
+
+    .card-collect__button {
+        width: 100%;
+    }
+}

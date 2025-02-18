@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider Block</title>
+    <link rel="stylesheet" href="../../common/css/normalize.css">
+    <link rel="stylesheet" href="../../common/css/consts.css">
+    <link rel="stylesheet" href="../../blocks/button/css/button.css">
+    <link rel="stylesheet" href="../../blocks/section-title/css/section-title.css">
+    <link rel="stylesheet" href="../../blocks/card-collect/css/card-collect.css">
+    <link rel="stylesheet" href="../../blocks/pagination/css/pagination.css">
+    <link rel="stylesheet" href="./css/card-slider.css">
+</head>
+<body style="background-color: yellowgreen; padding: 10px;">
+    <div class="card-slider">
+        <div class="card-slider__header">
+            <div class="section-title card-slider__title">Срочные сборы</div>
+            <div class="card-slider__buttons">
+                <div class="card-slider__button card-slider__button_prev card-slider__button_disabled"></div>
+                <div class="card-slider__button card-slider__button_next"></div>
+            </div>
+        </div>
+        <div class="card-collect card-slider__card">
+            <div class="card-collect__image">
+                <img class="card-collect__image-img" 
+                     src="../../common/images/card-collect/foto.png"
+                     alt="Фотография для сбора">
+            </div>
+            <div class="card-collect__content">
+                <div class="card-collect__location">
+                    с. Куймынь, Липецкая область
+                </div>
+                <div class="card-collect__title">
+                    Иерей Вадим Пупынин
+                </div>
+                <div class="card-collect__name">
+                    программа:
+                </div>
+                <div class="card-collect__value">
+                    помощь храмам
+                </div>
+                <div class="card-collect__name">
+                    цель сбора:
+                </div>
+                <div class="card-collect__value">
+                    покупка штукатурки для реставрации стен церкви в честь Святой Троицы
+                </div>
+                <div class="card-collect__progress">
+                    <div class="card-collect__progress-scale">
+                        <div class="card-collect__progress-scale-tick">
+                            Собрано
+                        </div>
+                        <div class="card-collect__progress-scale-tick">
+                            Необходимо
+                        </div>
+                    </div>
+                    <div class="card-collect__progress-bar">
+                        <div class="card-collect__progress-current" style="width: 33%;">
+                            33%
+                        </div>
+                    </div>
+                    <div class="card-collect__progress-underscale">
+                        <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                            ₽ 198.000
+                        </div>
+                        <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                            ₽ 600.000 
+                        </div>
+                    </div>
+                </div>            
+                <div class="card-collect__footer">
+                    <div class="card-collect__history">
+                        <a 
+                            class="card-collect__history-link"
+                            href="#"
+                            title="История">
+                            История
+                        </a>
+                    </div>
+                    <button class="button card-collect__button">
+                        Помочь<span class="button__heart"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-collect__urgent">
+                <span class="card-collect__urgent-flash"></span>срочный сбор
+            </div>
+        </div>
+        <div class="card-slider__pagination pagination">
+            <ul class="pagination__items">
+                <li class="pagination__item pagination__item_active"></li>
+                <li class="pagination__item"></li>
+                <li class="pagination__item"></li>
+                <li class="pagination__item"></li>
+                <li class="pagination__item"></li>
+            </ul>    
+        </div>
+    </div>    
+</body>
+</html>

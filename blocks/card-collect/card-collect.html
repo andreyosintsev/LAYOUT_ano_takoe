@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Collect Block</title>
+    <link rel="stylesheet" href="../../common/css/normalize.css">
+    <link rel="stylesheet" href="../../common/css/consts.css">
+    <link rel="stylesheet" href="../../blocks/button/css/button.css">
+    <link rel="stylesheet" href="./css/card-collect.css">
+</head>
+<body style="background-color: yellowgreen; padding: 10px;">
+    <div class="card-collect">
+        <div class="card-collect__image">
+            <img class="card-collect__image-img" 
+                 src="../../common/images/card-collect/foto.png"
+                 alt="Фотография для сбора">
+        </div>
+        <div class="card-collect__content">
+            <div class="card-collect__location">
+                с. Куймынь, Липецкая область
+            </div>
+            <div class="card-collect__title">
+                Иерей Вадим Пупынин
+            </div>
+            <div class="card-collect__name">
+                программа:
+            </div>
+            <div class="card-collect__value">
+                помощь храмам
+            </div>
+            <div class="card-collect__name">
+                цель сбора:
+            </div>
+            <div class="card-collect__value">
+                покупка штукатурки для реставрации стен церкви в честь Святой Троицы
+            </div>
+            <div class="card-collect__progress">
+                <div class="card-collect__progress-scale">
+                    <div class="card-collect__progress-scale-tick">
+                        Собрано
+                    </div>
+                    <div class="card-collect__progress-scale-tick">
+                        Необходимо
+                    </div>
+                </div>
+                <div class="card-collect__progress-bar">
+                    <div class="card-collect__progress-current" style="width: 33%;">
+                        33%
+                    </div>
+                </div>
+                <div class="card-collect__progress-underscale">
+                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                        ₽ 198.000
+                    </div>
+                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                        ₽ 600.000 
+                    </div>
+                </div>
+            </div>            
+            <div class="card-collect__footer">
+                <div class="card-collect__history">
+                    <a 
+                        class="card-collect__history-link"
+                        href="#"
+                        title="История">
+                        История
+                    </a>
+                </div>
+                <button class="button card-collect__button">
+                    Помочь<span class="button__heart"></span>
+                </button>
+            </div>
+        </div>
+        <div class="card-collect__urgent">
+            <span class="card-collect__urgent-flash"></span>срочный сбор
+        </div>
+    </div>    
+</body>
+</html>
