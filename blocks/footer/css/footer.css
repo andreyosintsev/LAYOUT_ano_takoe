@@ -109,6 +109,15 @@
     margin-right: 0;
 }
 
+.menu-bottom__item_current .menu-bottom__link {
+    color: var(--link-normal-color_hover, #3C3C3C);
+
+    text-decoration: none;
+    text-shadow: 0 0 1px var(--link-normal-color_hover, #3C3C3C);
+
+    border-bottom: 3px solid var(--green, #37CDAF);
+}
+
 .contacts {
     grid-area: contacts;
     align-self: center;

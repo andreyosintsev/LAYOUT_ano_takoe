@@ -67,14 +67,6 @@
     margin-right: 0;
 }
 
-.menu-main_collapseable .menu-main__items {
-    flex-wrap: nowrap;
-}
-
-.menu-main_collapseable .menu-main__item {
-    white-space: nowrap;
-}
-
 .menu-main__link {
     display: inline-block;
     padding: 0 12px 3px;
@@ -98,6 +90,15 @@
 
 .menu-main__item:nth-last-child() {
     margin-right: 0;
+}
+
+.menu-main__item_current .menu-main__link {
+    color: var(--link-normal-color_hover, #3C3C3C);
+
+    text-decoration: none;
+    text-shadow: 0 0 1px var(--link-normal-color_hover, #3C3C3C);
+
+    border-bottom: 3px solid var(--green, #37CDAF);
 }
 
 .button-help {
