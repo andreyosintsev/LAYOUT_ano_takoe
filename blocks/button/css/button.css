@@ -10,7 +10,7 @@
     font-size: 20px;
     font-weight: 500;
 
-    line-height: 24px;
+    line-height: 23px;
     text-align: center;
 
     background-color: var(--button-normal-background, #37CDAF);
@@ -38,6 +38,22 @@
     -webkit-mask-image: url("../images/heart.svg");
     -moz-mask-image: url("../images/heart.svg");
     mask-image: url("../images/heart.svg");
+    -webkit-mask-size: cover;
+    -moz-mask-size: cover;
+    mask-size: cover;
+}
+
+.button__email {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+
+    background-color: var(--white, #FFFFFF);
+
+    -webkit-mask-image: url("../images/email.svg");
+    -moz-mask-image: url("../images/email.svg");
+    mask-image: url("../images/email.svg");
     -webkit-mask-size: cover;
     -moz-mask-size: cover;
     mask-size: cover;

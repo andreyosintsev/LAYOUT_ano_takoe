@@ -153,10 +153,9 @@
     -moz-appearance: textfield;
     appearance: textfield;
 
-    position: relative;
     width: 100%;
     margin: 0;
-    padding: 12px 24px;
+    padding: 23px 25px;
 
     color: var(--button-outlined-color, #000000);
     font-size: 24px;

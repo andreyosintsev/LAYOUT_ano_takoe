@@ -23,6 +23,10 @@
     --gray:                     #A6A6A6; /* to collect */
     --gray-light:               #DCDCDC; /* outline buttons border*/
     --gray-lighter:             #E0E0E0; /* utility buttons */
+    --back-white:               #F7F9F8; /* pages background */
+    --off-white:                #FBFBFB; /* payment background */
+    --white:                    #FFFFFF;
+
 
     --green:                    #37CDAF; /* buttons, progress, sum collected */
     --green-light:              #DBF6F1; /* progress-background */
@@ -30,10 +34,9 @@
     --green-blue:               #E5F6F5; /* quotes and form background */
     --green-blue-light:         #F9FDFD;
 
-    --red-light:                #FF6666; /* form error (idea)*/
 
-    --off-white:                #FBFBFB; /* payment background */
-    --white:                    #FFFFFF;
+
+    --red-light:                #FF6666; /* form error (idea)*/
 
     /*
     Шрифты

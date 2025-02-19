@@ -19,6 +19,10 @@ body {
     margin: 0 auto;
 }
 
+.wrapper__page {
+    background-color: var(--back-white, #F7F9F8);
+}
+
 .first-screen {
     position: relative;
 }
@@ -49,8 +53,6 @@ body {
 
     /* Плавное смещение через translateX */
     transform: translateX(var(--offset));
-
-    z-index: -500;
 }
 
 .hero__title {
@@ -61,6 +63,7 @@ body {
     align-items: center;
 
     color: var(--white, #FFFFFF);
+    z-index: 10;
 }
 
 .hero__about {
@@ -130,6 +133,18 @@ body {
     padding: 124px 0 150px;
 }
 
+.content__slider {
+    margin: 0 0 88px;
+}
+
+.projects__header {
+    margin-bottom: 35px;
+}
+
+.projects {
+    margin-bottom: 180px;
+}
+
 @media (max-width: 1200px) {
     .first-screen {
         height: calc(0.03929 * 100vw + 1090.86px);
@@ -177,5 +192,23 @@ body {
         left: 50%;
         transform: translate(-50%, calc(100% + 5vw));
         width: calc(100% - 32px);
+    }
+
+    .content {
+        padding: 124px 16px 70px;
+    }
+
+    .content__slider {
+        margin-bottom: 70px;
+    }
+
+    .projects {
+        margin-bottom: 70px;
+    }
+
+    .projects__header {
+        margin-bottom: 27px;
+
+        text-align: center;
     }
 }
