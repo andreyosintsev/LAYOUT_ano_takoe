@@ -97,6 +97,11 @@
     --button-normal-color:              var(--white);
     --button-normal-background_hover:   var(--green-light);
 
+    --button-inversed-background:        transparent;
+    --button-inversed-color:             var(--green);
+    --button-inversed-color_hover:       var(--white);
+    --button-inversed-background_hover:  var(--green);
+
     --button-outlined-background:       var(--white);
     --button-outlined-color:            var(--black);
     --button-outlined-border:           var(--gray-light);

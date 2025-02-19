@@ -79,6 +79,28 @@
     background-color: var(--button-outlined-background_hover, #E0E0E0);
 }
 
+.button_inversed {
+    margin: 0 auto;
+    padding: 17px 0;
+
+    color: var(--button-inversed-color, #37CDAF);
+    font-size: 25px;
+    font-family: var(--text-color-main, sans-serif);
+    font-weight: 400;
+
+    line-height: 30px;
+
+    background-color: var(--button-inversed-background, transparent);
+
+    border: 1px solid var(--button-inversed-border, #37CDAF);
+    border-radius: var(--border-radius-small, 15px);
+}
+
+.button_inversed:hover {
+    color: var(--button-inversed-color_hover, #FFFFFF);
+    background-color: var(--button-inversed-background_hover, #37CDAF);
+}
+
 @media (max-width: 900px) {
     .button__heart {
         width: 18px;
