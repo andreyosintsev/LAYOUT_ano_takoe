@@ -145,6 +145,10 @@ body {
     margin-bottom: 180px;
 }
 
+.contacts-us__header {
+    margin-bottom: 36px;
+}
+
 @media (max-width: 1200px) {
     .first-screen {
         height: calc(0.03929 * 100vw + 1090.86px);
@@ -208,6 +212,12 @@ body {
 
     .projects__header {
         margin-bottom: 27px;
+
+        text-align: center;
+    }
+
+    .contacts-us__header {
+        margin-bottom: 30px;
 
         text-align: center;
     }

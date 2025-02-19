@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./blocks/card-slider/css/card-slider.css">
     <link rel="stylesheet" href="./blocks/pagination/css/pagination.css">
     <link rel="stylesheet" href="./blocks/projects-tiles/css/projects-tiles.css">
+    <link rel="stylesheet" href="./blocks/contact-us/css/contact-us.css">
     <link rel="stylesheet" href="./blocks/footer/css/footer.css">
     <link rel="stylesheet" href="./css/pages/index.css">
 </head>
@@ -56,7 +57,7 @@
         </ul>
     </div>
     <header class="header">
-        <div class="wrapper header__wrapper">
+        <div class="header__wrapper">
             <div class="logo">
                 <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
                     <img class="logo__image" src="./blocks/logo/images/logo.png" alt="АНО ТАКОЕ">
@@ -408,10 +409,75 @@
                         </a>
                     </div>
                 </div>
+            </section>
+            <section class="contacts-us">
+                <h2 class="section-title contacts-us__header">Связаться с нами</h2>
+                <div class="contact-us__content">
+                    <div class="contact-us__contacts">
+                        <div class="contact-us__hours">
+                            Позвоните нам в рабочие дни с 8.00 до 20.00 по телефону +7(925)003-62-78  или напишите письмо на takoeano@yandex.ru
+                        </div>
+                        <div class="contact-us__contact">
+                            <span class="contact-us__icon contact-us__icon_address"></span>
+                            г. Ростов-На-Дону,<br>
+                            переулок Днепровский, 124в
+                        </div>
+                        <div class="contact-us__contact">
+                            <span class="contact-us__icon contact-us__icon_phone"></span>
+                            +7 (925) 003 62 78
+                        </div>
+                        <div class="contact-us__contact">
+                            <span class="contact-us__icon contact-us__icon_email"></span>
+                            takoeano@yandex.ru
+                        </div>
+                    </div>
+                    <div class="contact-us__feedback">
+                        <form class="form contact-us__form" name="contact">
+                            <div class="form__content">
+                                <input
+                                    class="form__input form__input_name"
+                                    type="text"
+                                    name="name"
+                                    placeholder="Ваше имя"
+                                    required>
+                                <input
+                                    class="form__input form__input_email"
+                                    type="e-mail"
+                                    name="email"
+                                    pattern=".+@.+\..+"
+                                    placeholder="Ваш e-mail"
+                                    required>
+                                <textarea
+                                    class="form__textarea"
+                                    name="message"
+                                    placeholder="Сообщение"
+                                    required
+                                    ></textarea>
+                            </div>
+                            <div class="form__consent-send">
+                                <label class="form__checkbox-item">
+                                    <input class="form__checkbox"
+                                            type="checkbox"
+                                            id="consent"
+                                            name="consent"
+                                            checked>
+                                    <span class="form__checkbox-item_custom"></span>
+                                    <span class="form__label">
+                                        Нажимая кнопку <span class="strong">«Отправить»</span>, я даю свое согласие на обработку моих персональных данных в соответствии с <a href="#" class="form__link">Политикой обработки персональных данных</a>
+                                    </span>
+                                </label>
+                                <button class="button form__submit">
+                                    Отправить<span class="button__email"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <footer class="footer">
-        <div class="wrapper footer__wrapper">
+        <div class="footer__wrapper">
             <div class="logo logo_footer">
                 <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
                     <img class="logo__image" src="./blocks/logo/images/logo.png" alt="АНО ТАКОЕ">

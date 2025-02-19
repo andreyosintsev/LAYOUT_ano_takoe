@@ -1,7 +1,3 @@
-* {
-    outline: 1px solid #EEEEEE;
-}
-
 .strong {
     font-weight: 700;
 }
@@ -20,6 +16,10 @@
 
 .contact-us__title {
     margin-bottom: 36px;
+}
+
+.contact-us__contacts {
+    padding-right: 86px;
 }
 
 .contact-us__content {
@@ -152,6 +152,7 @@
 
 .form__checkbox-item {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin-right: 30px;
 
@@ -196,6 +197,8 @@
 }
 
 .form__label {
+    margin-left: 0;
+
     font-size: 13px;
 
     line-height: 15px;
@@ -222,6 +225,10 @@
 @media (max-width: 900px) {
     .contact-us__title {
         margin-bottom: 30px;
+    }
+
+    .contact-us__contacts {
+        padding-right: 0;
     }
 
     .contact-us__hours {
