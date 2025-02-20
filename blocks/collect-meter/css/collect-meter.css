@@ -9,8 +9,6 @@
     font-family: var(--text-family-main, sans-serif);
     font-size: 28px;
     font-weight: 500;
-
-    background-color: var(--white, #FFFFFF);
 }
 
 .collect-meter__scale {
