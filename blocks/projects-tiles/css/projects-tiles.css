@@ -162,7 +162,7 @@
         font-size: 12px;
 
         line-height: 14px;
-        letter-spacing: -0.36px;
+        letter-spacing: 97%;
     }
 
     .projects-tiles__row {
@@ -180,6 +180,10 @@
         margin-right: 0;
         margin-bottom: 10px;
         padding: 21px 17px 49px 32px;
+    }
+
+    .projects-tiles__link:last-child .projects-tiles__tile {
+        margin-bottom: 0;
     }
 
     .projects-tiles__header {
