@@ -1,0 +1,162 @@
+.request-donation {
+    width: 100%;
+
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 24px;
+    font-weight: 300;
+
+    line-height: 28px;
+    letter-spacing: 0.3px;
+
+    background-color: var(--green-blue, #E5F6F5);
+}
+
+.request-donation__content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0 74px;
+}
+
+.request-donation__title {
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.request-donation__post {
+    padding: 0;
+}
+
+.request__documents {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 60px;
+}
+
+.request__documents-title {
+    margin: 0 0 20px 0;
+
+    font-weight: 500;
+    font-size: 30px;
+
+    line-height: 35px;
+
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.request__document {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 11px;
+    padding: 21px;
+
+    background-color: var(--white, #FFFFFF);
+    border-radius: var(--border-radius, 20px);
+
+    box-shadow: 0px 4px 16.3px 0px #0000000D;
+}
+
+.request__document:last-child {
+    margin-bottom: 0;
+}
+
+.request__document-content {
+    width: 100%;
+    margin-right: 21px;
+
+    font-weight: 300;
+    font-size: 25px;
+
+    line-height: 29px;
+}
+
+.request__document-icon-document {
+    width: 41px;
+    height: 41px;
+    margin-right: 21px;
+    flex: 0 0 auto;
+
+    background: url("../images/document.svg") no-repeat center/contain;
+}
+
+.request__document-icon-view {
+    width: 25px;
+    height: 41px;
+    margin-right: 11px;
+    flex: 0 0 auto;
+
+    background: url("../images/view.svg") no-repeat center/contain;
+
+    cursor: pointer;
+}
+
+.request__document-icon-download {
+    width: 35px;
+    height: 41px;
+    flex: 0 0 auto;
+
+    background: url("../images/download.svg") no-repeat center/contain;
+
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .request-donation {
+        font-size: 18px;
+        font-weight: 300;
+
+        line-height: 21px;
+        letter-spacing: 0.2px;
+    }
+
+    .request-donation__content {
+        padding: 60px 16px 40px;
+    }
+
+    .request-donation__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .request__documents {
+        margin-bottom: 40px;
+    }
+
+    .request__documents-title {
+        font-weight: 500;
+        font-size: 24px;
+
+        line-height: 28px;
+    }
+
+    .request__document-content {
+        width: 100%;
+        min-width: 201px;
+        margin-right: 0;
+
+        font-weight: 300;
+        font-size: 18px;
+
+        line-height: 21px;
+    }
+
+    .request__document-icon-document {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+    }
+
+    .request__document-icon-view {
+        width: 20px;
+        height: 25px;
+        margin-right: 9px;
+    }
+
+    .request__document-icon-download {
+        width: 28px;
+        height: 25px;
+    }
+}
