@@ -38,7 +38,7 @@ body {
     margin-bottom: 24px;
 }
 
-.single__collect-donate{
+.single__collect-donate {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +64,22 @@ body {
         margin-bottom: 35px;
     }
 
+}
+
+@media (max-width: 800px) {
+    .single__collect-donate {
+        display: block;
+        margin-bottom: 42px;
+    }
+
+    .collect-donate__collect-meter {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .collect-donate__donate {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
