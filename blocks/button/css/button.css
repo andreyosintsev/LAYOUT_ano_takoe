@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 
-.button:hover, .button:focus, .button:focus-visible {
+.button:hover {
     background-color: var(--button-normal-background_hover, #5CE4C9);
 }
 

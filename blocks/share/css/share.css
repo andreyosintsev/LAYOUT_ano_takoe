@@ -1,0 +1,104 @@
+.share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 16px;
+}
+
+.share__title {
+    margin-right: 20px;
+}
+
+.share__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.share__button {
+    width: 135px;
+    height: 37px;
+    margin-right: 13px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 18px;
+
+    border-radius: 10px;
+}
+
+.share__button:last-child {
+    margin-right: 0;
+}
+
+.button__twitter {
+    width: 20px;
+    height: 17px;
+    margin-right: 11px;
+    flex: 0 0 auto;
+
+    background: url("../images/twitter.svg") no-repeat center;
+}
+
+.button__facebook {
+    width: 10px;
+    height: 20px;
+    margin-right: 14px;
+    flex: 0 0 auto;
+
+    background: url("../images/facebook.svg") no-repeat center;
+}
+
+.button__gmail {
+    width: 21px;
+    height: 21px;
+    margin-right: 14px;
+    flex: 0 0 auto;
+
+    background: url("../images/gmail.svg") no-repeat center;
+}
+
+
+@media (max-width: 600px) {
+    .share {
+        display: block;
+    }
+
+    .share__title {
+        margin: 0 0 31px 0;
+    }
+
+    .share__button {
+        width: calc(33.3% - 6.7px);
+        height: 31px;
+        margin-right: 10px;
+
+        font-size: 15px;
+
+        line-height: 17px;
+    }
+
+    .button__twitter {
+        margin-right: 3px;
+    }
+
+    .button__facebook {
+        margin-right: 3px;
+    }
+
+    .button__gmail {
+        margin-right: 3px;
+    }
+}

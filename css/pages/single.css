@@ -23,11 +23,15 @@ body {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 193px 0 79px;
+    padding: 193px 0 60px;
 }
 
 .breadcrumbs {
     margin-bottom: 35px;
+}
+
+.single__post {
+    margin-bottom: 74px;
 }
 
 .single__title {
@@ -54,6 +58,10 @@ body {
     width: 370px;
 }
 
+.single__share {
+    margin-left: 117px;
+}
+
 
 @media (max-width: 1200px) {
     .content {
@@ -67,6 +75,14 @@ body {
 }
 
 @media (max-width: 800px) {
+    .content {
+        padding-bottom: 70px;
+    }
+
+    .single__post {
+        margin-bottom: 74px;
+    }
+
     .single__collect-donate {
         display: block;
         margin-bottom: 42px;
@@ -80,8 +96,8 @@ body {
     .collect-donate__donate {
         width: 100%;
     }
-}
 
-@media (max-width: 480px) {
-
+    .single__share {
+        margin-left: 0;
+    }
 }
