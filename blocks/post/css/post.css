@@ -19,6 +19,10 @@
     line-height: 41px;
 }
 
+.post__h3_mt24 {
+    margin-top: 24px;
+}
+
 .post__i {
     font-style: italic;
 }
@@ -31,6 +35,10 @@
     margin: 0;
 
     padding: 0 0 26px 0;
+}
+
+.post__p_mt24 {
+    margin-top: 24px;
 }
 
 .post__a {

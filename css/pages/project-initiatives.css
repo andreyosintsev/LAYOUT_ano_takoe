@@ -64,6 +64,10 @@ body {
     padding: 0;
 }
 
+.post__h3_mt24 {
+    margin-top: 24px;
+}
+
 .content__slider {
     margin-top: 75px;
 }
