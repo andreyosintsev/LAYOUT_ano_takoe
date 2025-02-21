@@ -32,6 +32,8 @@ body {
 
 .project__title {
     margin-bottom: 43px;
+
+    text-align: center;
 }
 
 .project__image {
@@ -60,12 +62,15 @@ body {
 }
 
 .project__post {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
+}
+
+.post__h3_mt24 {
+    margin-top: 24px;
 }
 
 .content__slider {
     margin-top: 75px;
-    margin-bottom: 110px;
 }
 
 @media (max-width: 1200px) {
@@ -73,19 +78,31 @@ body {
         padding: 146px 16px 70px;
     }
 
-    .breadcrumbs {
-        margin-bottom: 35px;
+    .content__slider {
+        margin-top: 25px;
     }
 
 }
 
 @media (max-width: 800px) {
+    .breadcrumbs {
+        margin-bottom: 17px;
+    }
+
     .content {
-        padding-bottom: 70px;
+        padding-bottom: 45px;
+    }
+
+    .project__title {
+        margin-bottom: 20px;
+    }
+
+    .project__image {
+        margin-bottom: 30px;
     }
 
     .project__post {
-        margin-bottom: 74px;
+        margin-bottom: 25px;
     }
 
     .project__collect-donate {

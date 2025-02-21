@@ -97,9 +97,21 @@
     height: 41px;
     flex: 0 0 auto;
 
-    background: url("../images/download.svg") no-repeat center/contain;
+    background: url("../images/download.svg") no-repeat;
+    background-size: contain;
+    background-position-y: 6px;
 
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .request-donation__content {
+        padding: 50px 16px 74px;
+    }
+
+    .card-slider__title {
+        text-align: center;
+    }
 }
 
 @media (max-width: 800px) {
@@ -132,9 +144,13 @@
         line-height: 28px;
     }
 
+    .request__document {
+        margin-bottom: 6px;
+    }
+
     .request__document-content {
         width: 100%;
-        min-width: 201px;
+        min-width: 206px;
         margin-right: 0;
 
         font-weight: 300;
@@ -158,5 +174,7 @@
     .request__document-icon-download {
         width: 28px;
         height: 25px;
+
+        background-position-y: 2px;
     }
 }
