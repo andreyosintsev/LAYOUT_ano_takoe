@@ -55,6 +55,34 @@
     border-left: 4px solid var(--green, #37CDAF);
 }
 
+.post__cite {
+    display: block;
+    margin: 34px 0 60px;
+    padding: 58px 100px;
+
+    font-size: 30px;
+    font-style: italic;
+    line-height: 35px;
+
+    text-align: center;
+
+    background-color: var(--green-blue, #E5F6F5);
+
+    border-radius: var(--border-radius-small, 15px);
+}
+
+.post__cite-autor {
+    display: block;
+    margin-top: 20px;
+
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 18px;
+
+    text-align: center;
+}
+
 .post__donate-info {
     display: block;
     margin: 24px 0 50px;
@@ -102,6 +130,18 @@
         padding: 4px 0 4px 16px;
 
         line-height: 25px;
+    }
+
+    .post__cite {
+        margin: 30px 0 50px;
+        padding: 36px 32px;
+
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .post__cite-autor {
+        margin-top: 30px;
     }
 
     .post__donate-info {
