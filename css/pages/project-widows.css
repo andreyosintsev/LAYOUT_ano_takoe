@@ -32,8 +32,6 @@ body {
 
 .project__title {
     margin-bottom: 43px;
-
-    text-align: center;
 }
 
 .project__image {
@@ -63,6 +61,7 @@ body {
 
 .project__post {
     margin-bottom: 24px;
+    padding: 0;
 }
 
 .post__h3_mt24 {
@@ -95,6 +94,8 @@ body {
 
     .project__title {
         margin-bottom: 20px;
+
+        text-align: center;
     }
 
     .project__image {

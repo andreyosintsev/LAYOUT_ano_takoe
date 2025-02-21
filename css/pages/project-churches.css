@@ -63,6 +63,7 @@ body {
 
 .project__post {
     margin-bottom: 24px;
+    padding: 0;
 }
 
 .post__h3_mt24 {
