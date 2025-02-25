@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проекты | АНО Такое - поможем там, где в нас нуждаются</title>
+    <title>В храме Сергия Радонежского в п. Верхняя Верея переделали лестницу на клирос - Новости |АНО Такое - поможем там, где в нас нуждаются</title>
 
     <link rel="stylesheet" href="./css/common/normalize.css">
     <link rel="stylesheet" href="./css/common/consts.css">
@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="./blocks/header/css/header.css">
     <link rel="stylesheet" href="./blocks/breadcrumbs/css/breadcrumbs.css">
     <link rel="stylesheet" href="./blocks/section-title/css/section-title.css">
-    <link rel="stylesheet" href="./blocks/projects-tiles/css/projects-tiles.css">
+    <link rel="stylesheet" href="./blocks/post/css/post.css">
+    <link rel="stylesheet" href="./blocks/share/css/share.css">
+    <link rel="stylesheet" href="./blocks/share/css/share.css">
+    <link rel="stylesheet" href="./blocks/card-related/css/card-related.css">
     <link rel="stylesheet" href="./blocks/footer/css/footer.css">
-    <link rel="stylesheet" href="./css/pages/projects.css">
+    <link rel="stylesheet" href="./css/pages/news-single.css">
 </head>
 <body>
     <div class="menu-mobile hidden">
@@ -71,7 +74,7 @@
                             Сборы
                         </a>
                     </li>
-                    <li class="menu-main__item menu-main__item_current">
+                    <li class="menu-main__item">
                         <a class="menu-main__link" href="#" title="Наши проекты">
                             Проекты
                         </a>
@@ -81,7 +84,7 @@
                             Отчеты
                         </a>
                     </li>
-                    <li class="menu-main__item">
+                    <li class="menu-main__item menu-main__item_current">
                         <a class="menu-main__link" href="#" title="Новости и события">
                             Новости
                         </a>
@@ -95,102 +98,98 @@
     <div class="wrapper wrapper__page">
         <div class="content">
             <div class="breadcrumbs">
-                <a class="breadcrumbs__link" href="index.html">Главная</a> / Проекты
+                <a class="breadcrumbs__link" href="index.html">Главная</a> /
+                <a class="breadcrumbs__link" href="news.html">Новости</a> /
+                В храме Сергия Радонежского в п. Верхняя Верея переделали лестницу на клирос
             </div>
-            <section class="projects">
-                <h2 class="section-title projects__title">Наши проекты</h2>
-                <div class="projects-tiles projects__tiles">
-                    <div class="projects-tiles__row">
-                        <a class="projects-tiles__link"
-                            href="#">
-                            <div class="projects-tiles__tile">
-                                <div class="projects-tiles__header">
-                                    <div class="projects-tiles__num">/01</div>
-                                    <div class="projects-tiles__image projects-tiles__image_01"></div>
-                                </div>
-                                <div class="projects-tiles__title-description">
-                                    <div class="projects-tiles__title">
-                                        Помощь храмам
-                                    </div>
-                                    <div class="projects-tiles__description">
-                                        покупка церковной утвари, ремонт, оплата проектов храма, покупка облачения
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="projects-tiles__link"
-                            href="#">
-                            <div class="projects-tiles__tile">
-                                <div class="projects-tiles__header">
-                                    <div class="projects-tiles__num ">/02</div>
-                                    <div class="projects-tiles__image projects-tiles__image_02"></div>
-                                </div>
-                                <div class="projects-tiles__title-description">
-                                    <div class="projects-tiles__title">
-                                        Помощь вдовам священников
-                                    </div>
-                                    <div class="projects-tiles__description">
-                                        ежемесячная поддержка семьи
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="projects-tiles__link"
-                            href="#">
-                            <div class="projects-tiles__tile">
-                                <div class="projects-tiles__header">
-                                    <div class="projects-tiles__num">/03</div>
-                                    <div class="projects-tiles__image projects-tiles__image_03"></div>
-                                </div>
-                                <div class="projects-tiles__title-description">
-                                    <div class="projects-tiles__title">
-                                        Помощь семинаристам
-                                    </div>
-                                    <div class="projects-tiles__description">
-                                        финансовая поддержка будущих священников, оплата билетов к месту обучения
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="projects-tiles__row">
-                        <a class="projects-tiles__link"
-                            href="#">
-                            <div class="projects-tiles__tile">
-                                <div class="projects-tiles__header">
-                                    <div class="projects-tiles__num">/04</div>
-                                    <div class="projects-tiles__image projects-tiles__image_04"></div>
-                                </div>
-                                <div class="projects-tiles__title-description">
-                                    <div class="projects-tiles__title">
-                                        Инициативные приходы
-                                    </div>
-                                    <div class="projects-tiles__description">
-                                        привлечение средств на проекты активных прихожан, сбор средств, помощь в оплате материалов, помощь в оплате издания книги
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="projects-tiles__link"
-                            href="#">
-                            <div class="projects-tiles__tile">
-                                <div class="projects-tiles__header">
-                                    <div class="projects-tiles__num">/05</div>
-                                    <div class="projects-tiles__image projects-tiles__image_05"></div>
-                                </div>
-                                <div class="projects-tiles__title-description">
-                                    <div class="projects-tiles__title">
-                                        Помощь нуждающимся священнослужителям и их семьям
-                                    </div>
-                                    <div class="projects-tiles__description">
-                                        лечение, протезирование, улучшение жилищных условий, решение бытовых трудностей
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+            <section class="single-news">
+                <h2 class="section-title single-news__title">
+                    В храме Сергия Радонежского в п. Верхняя Верея переделали лестницу на клирос
+                </h2>
+                <div class="post single-news__post">
+                    <p class="post__p post__p_full">
+                        <img class="post__image"
+                        src="images/news/news2.jpg"
+                        alt="В храме Сергия Радонежского в п. Верхняя Верея переделали лестницу на клирос">
+                        <div class="post__image-subtitle">
+                            Лестница на клирос в храме Сергия Радонежского, п. Верхняя Верея
+                        </div>
+                    </p>
+                    <p class="post__p">
+                        <i class="post__i">
+                            Этой весной мы объявили срочный сбор на ремонт лестницы в храме Сергия Радонежского в селе Верхняя Верея Нижегородской области, так как случилась беда: отец Владимир Сушков упал с лестницы и сломал ногу.
+                        </i>
+                    </p>
+                    <blockquote class="post__blockquote">
+                        Благодаря вам, наши добрые друзья, мы все вместе смогли сотворить доброе дело. Рабочие в короткий срок переделали лестницу, чтобы больше никто не пострадал.
+                    </blockquote>
+                    <p class="post__p">
+                        Мы благодарим вас от всего сердца за вашу поддержку и помощь. Благодаря вашей доброте и неравнодушию этот приход избежал дальнейших несчастных случаев.
+                    </b>
+                    <p class="post__p">
+                        С уважением и благодарностью, желаем вам помощи Божьей во всех делах.
+                    </p>
+                </div>
+                <div class="share single-news__share">
+                    <div class="share__title">Поделиться</div>
+                    <div class="share__buttons">
+                        <div class="button share__button">
+                            <span class="button__twitter"></span>
+                            Twitter
+                        </div>
+                        <div class="button share__button">
+                            <span class="button__facebook"></span>
+                            Facebook</div>
+                        <div class="button share__button">
+                            <span class="button__gmail"></span>
+                            GMail</div>
                     </div>
                 </div>
             </section>
+            <section class="more-news">
+                <h2 class="section-title more-news__title">
+                    Еще новости
+                </h2>
+                <div class="more-news__container">
+                    <div class="card-related more-news__card">
+                        <div class="card-related__thumbnail">
+                            <img class="card-related__thumbnail-img"
+                                src="../../images/news/thumb_news.png"
+                                alt="В церки в честь Вознесения Господня продолжаются работы по строительству крыши">
+                        </div>
+                        <div class="card-related__content">
+                            <div class="card-related__title">
+                                В церки в честь Вознесения Господня продолжаются работы по строительству крыши
+                            </div>
+                            <div class="card-related__date">
+                                05.10.2024
+                            </div>
+                        </div>
+                        <a class="card-related__link"
+                            href="#"
+                            title="Прочитать все">
+                        </a>
+                    </div>
+                    <div class="card-related more-news__card">
+                        <div class="card-related__thumbnail">
+                            <img class="card-related__thumbnail-img"
+                                src="../../images/news/thumb_news3.png"
+                                alt="Мы открылись!">
+                        </div>
+                        <div class="card-related__content">
+                            <div class="card-related__title">
+                                Мы открылись!
+                            </div>
+                            <div class="card-related__date">
+                                13.02.2023
+                            </div>
+                        </div>
+                        <a class="card-related__link"
+                            href="#"
+                            title="Прочитать все">
+                        </a>
+                    </div>
+                </div>
         </div>
     </div>
     <footer class="footer">
@@ -207,7 +206,7 @@
                             О нас
                         </a>
                     </li>
-                    <li class="menu-bottom__item">
+                    <li class="menu-bottom__item menu-bottom__item_current">
                         <a class="menu-bottom__link" href="#" title="Новости и события">
                             Новости
                         </a>
@@ -222,7 +221,7 @@
                             Отчеты
                         </a>
                     </li>
-                    <li class="menu-bottom__item menu-bottom__item_current">
+                    <li class="menu-bottom__item">
                         <a class="menu-bottom__link" href="#" title="Проекты">
                             Проекты
                         </a>
