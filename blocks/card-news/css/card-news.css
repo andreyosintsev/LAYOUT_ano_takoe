@@ -115,7 +115,9 @@
 
     .card-news__thumbnail {
         width: 100%;
-        height: auto;
+        max-width: 100%;
+        height: 314px;
+        min-height: 314px;
 
         border-radius: var(--border-radius-small, 15px);
     }
