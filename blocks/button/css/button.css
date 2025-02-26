@@ -101,10 +101,109 @@
     background-color: var(--button-inversed-background_hover, #37CDAF);
 }
 
+.button-download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 21px 20px;
+
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 24px;
+    font-weight: 300;
+
+    line-height: 28px;
+    letter-spacing: 0.3px;
+
+    background-color: var(--white, #FFFFFF);
+    border-radius: var(--border-radius, 20px);
+
+    box-shadow: 0px 4px 16.3px 0px #0000000D;
+}
+
+.button-download__content {
+    width: 100%;
+    margin-right: 21px;
+
+    font-weight: 300;
+    font-size: 25px;
+
+    line-height: 29px;
+}
+
+.button-download__icon-document {
+    width: 41px;
+    height: 41px;
+    margin-right: 21px;
+    flex: 0 0 auto;
+
+    background: url("../images/document.svg") no-repeat center/contain;
+}
+
+.button-download__icon-view {
+    width: 25px;
+    height: 41px;
+    margin-right: 11px;
+    flex: 0 0 auto;
+
+    background: url("../images/view.svg") no-repeat center/contain;
+
+    cursor: pointer;
+}
+
+.button-download__icon-download {
+    width: 35px;
+    height: 41px;
+    flex: 0 0 auto;
+
+    background: url("../images/download.svg") no-repeat;
+    background-size: contain;
+    background-position-y: 6px;
+
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     .button__heart {
         width: 18px;
         height: 18px;
         margin-left: 7px;
+    }
+}
+
+@media (max-width: 800px) {
+    .button-download {
+        padding: 21px 7px 21px 20px;
+
+        border-radius: var(--border-radius-small, 15px);
+    }
+
+    .button-download__content {
+        width: 100%;
+        margin-right: 0;
+
+        font-weight: 300;
+        font-size: 18px;
+
+        letter-spacing: 0.2px;
+        line-height: 21px;
+    }
+
+    .button-download__icon-document {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+    }
+
+    .button-download__icon-view {
+        width: 20px;
+        height: 25px;
+        margin-right: 9px;
+    }
+
+    .button-download__icon-download {
+        width: 28px;
+        height: 25px;
+
+        background-position-y: 2px;
     }
 }

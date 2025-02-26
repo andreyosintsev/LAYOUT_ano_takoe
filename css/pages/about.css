@@ -255,11 +255,11 @@ body {
     margin-bottom: 0;
 }
 
-.our-documents__documents .request__document {
+.request__document {
     margin-bottom: 15px;
 }
 
-.our-documents__documents .request__document:last-child {
+.request__document:last-child {
     margin-bottom: 0;
 }
 
