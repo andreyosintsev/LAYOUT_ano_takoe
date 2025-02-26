@@ -182,10 +182,6 @@
         padding: 21px 17px 49px 32px;
     }
 
-    .projects-tiles__link:last-child .projects-tiles__tile {
-        margin-bottom: 0;
-    }
-
     .projects-tiles__header {
         align-items: flex-start;
         margin-bottom: 0;

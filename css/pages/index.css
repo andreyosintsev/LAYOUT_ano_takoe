@@ -63,7 +63,7 @@ body {
     align-items: center;
 
     color: var(--white, #FFFFFF);
-    z-index: 10;
+    z-index: 5;
 }
 
 .hero__about {
