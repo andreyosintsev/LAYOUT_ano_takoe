@@ -36,7 +36,13 @@
 
     line-height: 18px;
 
+    text-decoration: none;
+
     border-radius: 10px;
+}
+
+.share__button:hover {
+    text-decoration: none;
 }
 
 .share__button:last-child {

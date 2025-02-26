@@ -37,7 +37,7 @@ body {
 
     padding: 128px clamp(6px, calc(49.2vw - 570px), 375px) 0;
 
-    width: clamp(360px, 100vw, 1920px);
+    width: 100%;
     height: clamp(824px, calc(824px + 199 * ((100vw - 360px) / 1560)), 1023px);
 
     overflow: hidden;
