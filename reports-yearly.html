@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Годовые отчёты | АНО Такое - поможем там, где в нас нуждаются</title>
+
+    <link rel="stylesheet" href="./css/common/normalize.css">
+    <link rel="stylesheet" href="./css/common/consts.css">
+    <link rel="stylesheet" href="./blocks/logo/css/logo.css">
+    <link rel="stylesheet" href="./blocks/button/css/button.css">
+    <link rel="stylesheet" href="./blocks/menu-main/css/menu-main.css">
+    <link rel="stylesheet" href="./blocks/menu-mobile/css/menu-mobile.css">
+    <link rel="stylesheet" href="./blocks/header/css/header.css">
+    <link rel="stylesheet" href="./blocks/breadcrumbs/css/breadcrumbs.css">
+    <link rel="stylesheet" href="./blocks/section-title/css/section-title.css">
+    <link rel="stylesheet" href="./blocks/post/css/post.css">
+    <link rel="stylesheet" href="./blocks/footer/css/footer.css">
+    <link rel="stylesheet" href="./css/pages/reports-yearly.css">
+</head>
+<body>
+    <div class="menu-mobile hidden">
+        <div class="menu-mobile__close"></div>
+        <div class="logo menu-mobile__logo">
+            <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
+                <img class="logo__image" src="./blocks/logo/images/logo.png" alt="АНО ТАКОЕ">
+            </a>
+        </div>
+        <div class="menu-mobile__contacts">
+            <p class="menu-mobile__contacts-p">
+                +7 (925) 003 62 78
+            </p>
+            <p class="menu-mobile__contacts-p">
+                takoeano@yandex.ru
+            </p>
+        </div>
+        <ul class="menu-mobile__items">
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">О нас</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Сборы</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Проекты</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Новости</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">Отчеты</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="logo">
+                <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
+                    <img class="logo__image" src="./blocks/logo/images/logo.png" alt="АНО ТАКОЕ">
+                </a>
+            </div>
+            <nav class="menu-main menu-main_collapseable">
+                <ul class="menu-main__items">
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="О нас">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Требуется ваша помощь">
+                            Сборы
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Наши проекты">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="menu-main__item menu-main__item_current">
+                        <a class="menu-main__link" href="#" title="Отчёты">
+                            Отчеты
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#" title="Новости и события">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="button button-help">ПОМОЧЬ<span class="button__heart"></span></div>
+            <div class="menu-mobile-button"></div>
+        </div>
+    </header>
+    <div class="wrapper wrapper__page">
+        <div class="content">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs__link" href="index.html">Главная</a> /
+                Отчёты
+            </div>
+            <section class="reports">
+                <h2 class="section-title reports__title">Отчеты</h2>
+                <div class="reports__content">
+                    <div class="post report__preface">
+                        <p class="post__p">
+                            Прозрачность и открытость — наши главные принципы. Здесь вы можете ознакомиться с отчетами о нашей деятельности и достижениями нашего проекта помощи.
+                        </p>
+                    </div>
+                    <div class="reports__selectors">
+                        <label class="form__radio-item">
+                            <input class="form__radio"
+                                    type="radio"
+                                    id="checkbox_yearly"
+                                    name="interval"
+                                    checked>
+                            <span class="form__radio-item_custom"></span>
+                            <span class="form__label">Годовые отчеты</span>
+                        </label>
+                        <label class="form__radio-item">
+                            <input class="form__radio"
+                                    type="radio"
+                                    id="checkbox_monthly"
+                                    name="interval">
+                            <span class="form__radio-item_custom"></span>
+                            <span class="form__label">Ежемесячные отчеты</span>
+                        </label>
+                        <label class="form__radio-item">
+                            <input class="form__radio"
+                                    type="radio"
+                                    id="checkbox_daily"
+                                    name="interval">
+                            <span class="form__radio-item_custom"></span>
+                            <span class="form__label">Ежедневные поступления</span>
+                        </label>
+                    </div>
+                    <div class="reports__list">
+                        <div class="button-download reports__item">
+                            <div class="button-download__icon-document"></div>
+                            <div class="button-download__content">Годовой отчёт 2024</div>
+                            <a class="button-download__icon-view"
+                                href="#"
+                                title="Просмотреть документ"></a>
+                            <a class="button-download__icon-download"
+                                href="#"
+                                title="Скачать документ"></a>
+                        </div>
+                        <div class="button-download reports__item">
+                            <div class="button-download__icon-document"></div>
+                            <div class="button-download__content">Годовой отчёт 2023</div>
+                            <a class="button-download__icon-view"
+                                href="#"
+                                title="Просмотреть документ"></a>
+                            <a class="button-download__icon-download"
+                                href="#"
+                                title="Скачать документ"></a>
+                        </div>
+                        <div class="button-download reports__item">
+                            <div class="button-download__icon-document"></div>
+                            <div class="button-download__content">Годовой отчёт 2022</div>
+                            <a class="button-download__icon-view"
+                                href="#"
+                                title="Просмотреть документ"></a>
+                            <a class="button-download__icon-download"
+                                href="#"
+                                title="Скачать документ"></a>
+                        </div>
+                        <div class="button-download reports__item">
+                            <div class="button-download__icon-document"></div>
+                            <div class="button-download__content">Годовой отчёт 2021</div>
+                            <a class="button-download__icon-view"
+                                href="#"
+                                title="Просмотреть документ"></a>
+                            <a class="button-download__icon-download"
+                                href="#"
+                                title="Скачать документ"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="logo logo_footer">
+                <a class="logo__link" href="#" title="АНО ТАКОЕ - главная страница">
+                    <img class="logo__image" src="./blocks/logo/images/logo.png" alt="АНО ТАКОЕ">
+                </a>
+            </div>
+            <nav class="menu-bottom">
+                <ul class="menu-bottom__items">
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="О нас">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Новости и события">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Требуется ваша помощь">
+                            Сборы
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item menu-bottom__item_current">
+                        <a class="menu-bottom__link" href="#" title="Отчёты">
+                            Отчеты
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item">
+                        <a class="menu-bottom__link" href="#" title="Проекты">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="menu-bottom__item"></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <a class="contacts__link" href="tel:+79250036278" title="Телефон для связи">+7 (925) 003 62 78</a>
+                <a class="contacts__link contacts__link_mailto" href="mailto:takoeano@yandex.ru" title="E-mail для связи">takoeano@yandex.ru</a>
+            </div>
+            <div class="info">
+                <div class="info__copyright">
+                    © 2025 — Автономная Некомерческая Организация  «ТАКОЕ»
+                </div>
+                <div class="info__termsofuse">
+                    <a class="info__link" href="#"  title="Просмотреть пользовательское соглашение">
+                        Пользовательское соглашение
+                    </a>
+                </div>
+                <div class="info__policy">
+                    <a class="info__link" href="#" title="Прочитать политику обработки персональных данных">
+                        Политика обработки персональных данных
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

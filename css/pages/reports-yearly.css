@@ -1,0 +1,163 @@
+body {
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.wrapper__page {
+    background-color: var(--back-white, #F7F9F8);
+}
+
+.content {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 183px 0 82px;
+}
+
+.content-details {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0 150px;
+
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.breadcrumbs {
+    margin-bottom: 35px;
+}
+
+.reports__title {
+    margin-bottom: 35px;
+}
+
+.report__preface {
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.post__p {
+    padding-bottom: 0;
+}
+
+.reports__selectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.form__radio-item {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+
+    cursor: pointer;
+}
+
+.form__radio {
+    position: absolute;
+    width: 0;
+    height: 0;
+
+
+    opacity: 0;
+}
+
+.form__radio-item:last-of-type {
+    margin-right: 0;
+}
+
+.form__radio-item_custom {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+
+    border: 1px solid #C2C2C2;
+    border-radius: var(--border-radius-xxsmall, 6px);
+
+    transition: all 0.3s ease;
+}
+
+.form__radio:checked + .form__radio-item_custom::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+
+    background: url("../../images/check.svg") no-repeat center;
+}
+
+.form__radio-item:hover .form__radio-item_custom  {
+    border-color: var(--gray, #A6A6A6);
+}
+
+.reports__item {
+    margin-bottom: 15px;
+}
+
+.reports__item:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        padding: 183px 16px 82px;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        padding: 146px 16px 70px;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 35px;
+    }
+
+    .reports__title {
+        margin-bottom: 20px;
+
+        text-align: center;
+    }
+
+    .report__preface {
+        margin-bottom: 50px;
+    }
+
+    .reports__selectors {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .form__radio-item {
+        margin: 0 0 11px 0;
+    }
+
+    .reports__item {
+        margin-bottom: 5px;
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
+}
