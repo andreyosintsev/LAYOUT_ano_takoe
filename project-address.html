@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./blocks/pagination-slider/css/pagination-slider.css">
     <link rel="stylesheet" href="./blocks/request-donation/css/request-donation.css">
     <link rel="stylesheet" href="./blocks/footer/css/footer.css">
+    <link rel="stylesheet" href="css/common/owl.carousel.min.css" >
+    <link rel="stylesheet" href="css/common/owl.theme.default.min.css" >
     <link rel="stylesheet" href="./css/pages/project-address.css">
 </head>
 <body>
@@ -158,85 +160,342 @@
             <section class="card-slider content__slider">
                 <div class="card-slider__header">
                     <h2 class="section-title card-slider__title">Кому вы можете помочь</h2>
-                    <div class="card-slider__buttons">
-                        <div class="card-slider__button card-slider__button_prev card-slider__button_disabled"></div>
-                        <div class="card-slider__button card-slider__button_next"></div>
+                    <div class="card-slider__buttons owl-nav">
+                        <button class="card-slider__button card-slider__button_prev"></button>
+                        <button class="card-slider__button card-slider__button_next"></button>
                     </div>
                 </div>
-                <div class="card-collect card-slider__card">
-                    <div class="card-collect__image">
-                        <img class="card-collect__image-img"
-                                src="./images/card-collect/foto.png"
+                <div class="card-slider__cards owl-carousel owl-theme">
+                    <div class="card-collect card-slider__card">
+                        <div class="card-collect__image">
+                            <img class="card-collect__image-img"
+                                    src="images/card-collect/foto.png"
+                                    alt="Фотография для сбора">
+                        </div>
+                        <div class="card-collect__content">
+                            <div class="card-collect__location">
+                                с. Куймынь, Липецкая область
+                            </div>
+                            <div class="card-collect__title">
+                                Иерей Вадим Пупынин
+                            </div>
+                            <div class="card-collect__name">
+                                программа:
+                            </div>
+                            <div class="card-collect__value">
+                                помощь храмам
+                            </div>
+                            <div class="card-collect__name">
+                                цель сбора:
+                            </div>
+                            <div class="card-collect__value">
+                                покупка штукатурки для реставрации стен церкви в честь Святой Троицы
+                            </div>
+                            <div class="card-collect__progress">
+                                <div class="card-collect__progress-scale">
+                                    <div class="card-collect__progress-scale-tick">
+                                        Собрано
+                                    </div>
+                                    <div class="card-collect__progress-scale-tick">
+                                        Необходимо
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-bar">
+                                    <div class="card-collect__progress-current" style="width: 33%;">
+                                        33%
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-underscale">
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                                        ₽ 198.000
+                                    </div>
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                                        ₽ 600.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-collect__footer">
+                                <div class="card-collect__history">
+                                    <a
+                                        class="card-collect__history-link"
+                                        href="single.html"
+                                        title="История">
+                                        История
+                                    </a>
+                                </div>
+                                <button class="button card-collect__button">
+                                    Помочь<span class="button__heart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-collect__urgent">
+                            <span class="card-collect__urgent-flash"></span>срочный сбор
+                        </div>
+                    </div>
+                    <div class="card-collect card-slider__card">
+                        <div class="card-collect__image">
+                            <img class="card-collect__image-img"
+                                src="images/card-collect/foto2.png"
                                 alt="Фотография для сбора">
+                        </div>
+                        <div class="card-collect__content">
+                            <div class="card-collect__location">
+                                Исламабад, Пакистан
+                            </div>
+                            <div class="card-collect__title">
+                                Иерей Павел Анджум Сушил
+                            </div>
+                            <div class="card-collect__name">
+                                программа:
+                            </div>
+                            <div class="card-collect__value">
+                                помощь нуждающимся священослужителям и их семьям
+                            </div>
+                            <div class="card-collect__name">
+                                цель сбора:
+                            </div>
+                            <div class="card-collect__value">
+                                ежемесячная поддержка семьи
+                            </div>
+                            <div class="card-collect__progress">
+                                <div class="card-collect__progress-scale">
+                                    <div class="card-collect__progress-scale-tick">
+                                        Собрано
+                                    </div>
+                                    <div class="card-collect__progress-scale-tick">
+                                        Необходимо
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-bar">
+                                    <div class="card-collect__progress-current" style="width: 0%;">
+
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-underscale">
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                                        ₽ 0.0
+                                    </div>
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                                        ₽ 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-collect__footer">
+                                <div class="card-collect__history">
+                                    <a
+                                        class="card-collect__history-link"
+                                        href="single.html"
+                                        title="История">
+                                        История
+                                    </a>
+                                </div>
+                                <button class="button card-collect__button">
+                                    Помочь<span class="button__heart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-collect__urgent">
+                            <span class="card-collect__urgent-flash"></span>срочный сбор
+                        </div>
                     </div>
-                    <div class="card-collect__content">
-                        <div class="card-collect__location">
-                            с. Куймынь, Липецкая область
+                    <div class="card-collect collect__card">
+                        <div class="card-collect__image">
+                            <img class="card-collect__image-img"
+                                src="images/card-collect/foto3.png"
+                                alt="Фотография для сбора">
                         </div>
-                        <div class="card-collect__title">
-                            Иерей Вадим Пупынин
-                        </div>
-                        <div class="card-collect__name">
-                            программа:
-                        </div>
-                        <div class="card-collect__value">
-                            помощь храмам
-                        </div>
-                        <div class="card-collect__name">
-                            цель сбора:
-                        </div>
-                        <div class="card-collect__value">
-                            покупка штукатурки для реставрации стен церкви в честь Святой Троицы
-                        </div>
-                        <div class="card-collect__progress">
-                            <div class="card-collect__progress-scale">
-                                <div class="card-collect__progress-scale-tick">
-                                    Собрано
+                        <div class="card-collect__content">
+                            <div class="card-collect__location">
+                                с. Верхяя Верея, Владимирская область
+                            </div>
+                            <div class="card-collect__title">
+                                Протоиерей Владимир Сушков
+                            </div>
+                            <div class="card-collect__name">
+                                программа:
+                            </div>
+                            <div class="card-collect__value">
+                                помощь храмам
+                            </div>
+                            <div class="card-collect__name">
+                                цель сбора:
+                            </div>
+                            <div class="card-collect__value">
+                                покраска стен церкви в честь Сергия Радонежского
+                            </div>
+                            <div class="card-collect__progress">
+                                <div class="card-collect__progress-scale">
+                                    <div class="card-collect__progress-scale-tick">
+                                        Собрано
+                                    </div>
+                                    <div class="card-collect__progress-scale-tick">
+                                        Необходимо
+                                    </div>
                                 </div>
-                                <div class="card-collect__progress-scale-tick">
-                                    Необходимо
+                                <div class="card-collect__progress-bar">
+                                    <div class="card-collect__progress-current" style="width: 33%;">
+                                        10%
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-underscale">
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                                        ₽ 200.000
+                                    </div>
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                                        ₽ 2.000.000
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-collect__progress-bar">
-                                <div class="card-collect__progress-current" style="width: 33%;">
-                                    33%
+                            <div class="card-collect__footer">
+                                <div class="card-collect__history">
+                                    <a
+                                        class="card-collect__history-link"
+                                        href="single.html"
+                                        title="История">
+                                        История
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="card-collect__progress-underscale">
-                                <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
-                                    ₽ 198.000
-                                </div>
-                                <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
-                                    ₽ 600.000
-                                </div>
+                                <button class="button card-collect__button">
+                                    Помочь<span class="button__heart"></span>
+                                </button>
                             </div>
                         </div>
-                        <div class="card-collect__footer">
-                            <div class="card-collect__history">
-                                <a
-                                    class="card-collect__history-link"
-                                    href="single.html"
-                                    title="История">
-                                    История
-                                </a>
-                            </div>
-                            <button class="button card-collect__button">
-                                Помочь<span class="button__heart"></span>
-                            </button>
+                        <div class="card-collect__urgent">
+                            <span class="card-collect__urgent-flash"></span>срочный сбор
                         </div>
                     </div>
-                    <div class="card-collect__urgent">
-                        <span class="card-collect__urgent-flash"></span>срочный сбор
+                    <div class="card-collect collect__card">
+                        <div class="card-collect__image">
+                            <img class="card-collect__image-img"
+                                src="images/card-collect/foto4.png"
+                                alt="Фотография для сбора">
+                        </div>
+                        <div class="card-collect__content">
+                            <div class="card-collect__location">
+                                пос. Вершино-Дарасунский, Забайкальский край
+                            </div>
+                            <div class="card-collect__title">
+                                Протоиерей Александр Тылькевич
+                            </div>
+                            <div class="card-collect__name">
+                                программа:
+                            </div>
+                            <div class="card-collect__value">
+                                помощь храмам
+                            </div>
+                            <div class="card-collect__name">
+                                цель сбора:
+                            </div>
+                            <div class="card-collect__value">
+                                восстановление церкви в честь Успения Пресвятой Богородицы
+                            </div>
+                            <div class="card-collect__progress">
+                                <div class="card-collect__progress-scale">
+                                    <div class="card-collect__progress-scale-tick">
+                                        Собрано
+                                    </div>
+                                    <div class="card-collect__progress-scale-tick">
+                                        Необходимо
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-bar">
+                                    <div class="card-collect__progress-current" style="width: 33%;">
+                                        95%
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-underscale">
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                                        ₽ 1.250.200
+                                    </div>
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                                        ₽ 1.500.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-collect__footer">
+                                <div class="card-collect__history">
+                                    <a
+                                        class="card-collect__history-link"
+                                        href="single.html"
+                                        title="История">
+                                        История
+                                    </a>
+                                </div>
+                                <button class="button card-collect__button">
+                                    Помочь<span class="button__heart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-collect__urgent hidden">
+                            <span class="card-collect__urgent-flash"></span>срочный сбор
+                        </div>
                     </div>
-                </div>
-                <div class="card-slider__pagination pagination-slider">
-                    <ul class="pagination-slider__items">
-                        <li class="pagination-slider__item pagination-slider__item_active"></li>
-                        <li class="pagination-slider__item"></li>
-                        <li class="pagination-slider__item"></li>
-                        <li class="pagination-slider__item"></li>
-                        <li class="pagination-slider__item"></li>
-                    </ul>
+                    <div class="card-collect collect__card">
+                        <div class="card-collect__image">
+                            <img class="card-collect__image-img"
+                                src="images/card-collect/foto5.png"
+                                alt="Фотография для сбора">
+                        </div>
+                        <div class="card-collect__content">
+                            <div class="card-collect__location">
+                                с. Смородино, Белгородская область
+                            </div>
+                            <div class="card-collect__title">
+                                Матушка Юлия Корчевская
+                            </div>
+                            <div class="card-collect__name">
+                                программа:
+                            </div>
+                            <div class="card-collect__value">
+                                помощь нуждающимся священнослужителям и их семьям
+                            </div>
+                            <div class="card-collect__name">
+                                цель сбора:
+                            </div>
+                            <div class="card-collect__value">
+                                ежемесячная финансовая поддержка
+                            </div>
+                            <div class="card-collect__progress">
+                                <div class="card-collect__progress-scale">
+                                    <div class="card-collect__progress-scale-tick">
+                                        Собрано
+                                    </div>
+                                    <div class="card-collect__progress-scale-tick">
+                                        Необходимо
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-bar">
+                                    <div class="card-collect__progress-current" style="width: 33%;">
+                                        10%
+                                    </div>
+                                </div>
+                                <div class="card-collect__progress-underscale">
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_current">
+                                        ₽ 350
+                                    </div>
+                                    <div class="card-collect__progress-underscale-tick card-collect__progress-underscale-tick_total">
+                                        ₽ 30.000
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-collect__footer">
+                                <div class="card-collect__history">
+                                    <a
+                                        class="card-collect__history-link"
+                                        href="single.html"
+                                        title="История">
+                                        История
+                                    </a>
+                                </div>
+                                <button class="button card-collect__button">
+                                    Помочь<span class="button__heart"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-collect__urgent hidden">
+                            <span class="card-collect__urgent-flash"></span>срочный сбор
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -358,6 +617,28 @@
         </div>
     </footer>
 
+    <script src="scripts/util/jquery-3.7.1.min.js"></script>
+    <script src="scripts/util/owl.carousel.min.js"></script>
     <script src="blocks/menu-mobile/scripts/menu-mobile.js"></script>
+    <script>
+        $(document).ready(function(){
+            const owl = $('.owl-carousel').owlCarousel(
+            {
+                items: 1,
+                margin: 26,
+                loop: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                nav: false,
+            });
+            $(".card-slider__button_next").click(function() {
+                owl.trigger("next.owl.carousel");
+            });
+
+            $(".card-slider__button_prev").click(function() {
+                owl.trigger("prev.owl.carousel");
+            });
+        });
+    </script>
 </body>
 </html>

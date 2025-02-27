@@ -74,6 +74,26 @@ body {
     margin-top: 75px;
 }
 
+.owl-theme .owl-nav.disabled+.owl-dots {
+    padding-top: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    width: 9px;
+    height: 9px;
+    margin: 5px 8px;
+
+    background: var(--green, #37CDAF);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 9px;
+    height: 9px;
+    margin: 5px 8px;
+
+    background: var(--gray-light, #DCDCDC);
+}
+
 @media (max-width: 1200px) {
     .content {
         padding: 146px 16px 70px;
