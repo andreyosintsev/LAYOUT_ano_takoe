@@ -2,12 +2,29 @@
     display: none !important;
 }
 
-.payment {
+.payment-popup__container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 100;
+}
+
+.payment-popup {
     max-width: 600px;
     padding: 55px 45px 40px;
 
 
     color: var(--text-color-main, #000000);
+
     font-size: 20px;
     font-family: var(--text-family-main, sans-serif);
     font-weight: 300;
@@ -17,7 +34,18 @@
     border-radius: var(--border-radius-xlarge, 35px);
 }
 
-.payment__title {
+.payment-popup_desktop {
+    display: block;
+    position: relative;
+
+    max-width: 1165px;
+}
+
+.payment-popup_mobile {
+    display: none;
+}
+
+.payment-popup__title {
     margin-bottom: 30px;
 
     font-size: 24px;
@@ -25,11 +53,21 @@
     line-height: 28px;
 }
 
-.payment__title_strong {
+.payment-popup_desktop .payment-popup__title {
+    padding-right: 70px;
+
+    text-align: left;
+}
+
+.payment-popup_desktop .payment-popup__title_strong {
+    padding-right: 0;
+}
+
+.payment-popup__title_strong {
     font-weight: 500;
 }
 
-.payment__form {
+.payment-popup__form {
     margin-bottom: 25px;
 }
 
@@ -119,7 +157,7 @@
     line-height: 23px;
 }
 
-.form__payment-sums {
+.form__payment-popup-sums {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -127,26 +165,48 @@
     margin-bottom: 28px;
 }
 
-.form__payment-sum {
+.payment-popup_desktop .form__payment-popup-sums {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    grid-template-rows: auto;
+
+    margin-bottom: 28px;
+}
+
+.form__payment-popup-sum {
     margin-right: 24px;
     margin-bottom: 12px;
 }
 
-.form__payment-sum:nth-child(3) {
-    margin-right: 0;
-}
-
-.form__payment-sum:nth-child(4) {
+.payment-popup_desktop .form__payment-popup-sum {
+    margin-right: 18px;
     margin-bottom: 0;
 }
 
-.form__payment-sum:nth-child(5) {
+.form__payment-popup-sum:nth-child(3) {
+    margin-right: 0;
+}
+
+.payment-popup_desktop .form__payment-popup-sum:nth-child(3) {
+    margin-right: 18px;
+}
+
+.form__payment-popup-sum:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.form__payment-popup-sum:nth-child(5) {
     margin-right: 0;
     margin-bottom: 0;
 }
 
-.form__payment-sum:last-child {
+.form__payment-popup-sum:last-child {
     grid-column: span 2; /* Занимает всю ширину контейнера */
+}
+
+.payment-popup_desktop .form__payment-popup-sum:last-child {
+    grid-column: auto;
 }
 
 .form__input {
@@ -155,7 +215,7 @@
 
     width: 100%;
     margin: 0;
-    padding: 12px 25px;
+    padding: 12px 45px 12px 25px;
 
     color: var(--button-outlined-color, #000000);
     font-size: 24px;
@@ -172,11 +232,7 @@
     outline: none;
 }
 
-.form__input.form__input_sum {
-    padding: 14px 45px 15px 25px
-}
-
-.form__payment-sum .form__input::placeholder {
+.form__payment-popup-sum .form__input::placeholder {
     color: var(--text-color-main, #000000);
 }
 
@@ -194,11 +250,11 @@
     padding: 18px 25px
 }
 
-.input.form__payment-sum {
+.input.form__payment-popup-sum {
     position: relative;
 }
 
-.input.form__payment-sum::after {
+.input.form__payment-popup-sum::after {
     position: absolute;
     content: '₽';
     top: 14px;
@@ -223,14 +279,14 @@
     font-weight: 400;
 }
 
-.form__payment-methods {
+.form__payment-popup-methods {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 1fr;
     margin: 0 -6.5px 28px -6.5px;
 }
 
-.form__payment-method {
+.form__payment-popup-method {
     display: block;
     margin: 0 6.5px;
     padding: 17px 10px;
@@ -238,7 +294,7 @@
     border-radius: var(--border-radius-smaller, 14px);
 }
 
-.form__payment-method-image {
+.form__payment-popup-method-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,19 +302,19 @@
     height: 60px;
 }
 
-.form__payment-method-image_card {
+.form__payment-popup-method-image_card {
     width: 141px;
 }
 
-.form__payment-method-image_sbp {
+.form__payment-popup-method-image_sbp {
     width: 94px;
 }
 
-.form__payment-method-image_yad {
+.form__payment-popup-method-image_yad {
     width: 107px;
 }
 
-.form__payment-method-label {
+.form__payment-popup-method-label {
     color: var(--text-color-main, #000000);
     font-size: 13px;
     font-weight: 300;
@@ -266,12 +322,61 @@
     line-height: 15px;
 }
 
+.form__contact-method {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 22px;
+}
+
+.form__contact {
+    margin-right: 2%;
+}
+
+.form__method {
+    margin-left: 2%;
+}
+
+.form__method-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.menu-mobile__close {
+    position: absolute;
+    display: block;
+    width: 63px;
+    height: 63px;
+    top: 21px;
+    right: 26px;
+
+    background-image: url("../images/close.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    cursor: pointer
+}
+
+.menu-mobile__close:hover, .menu-mobile__close:focus {
+    background-image: url("../images/close_hover.svg");
+}
+
+@media (max-width: 1300px) {
+    .payment-popup_desktop {
+        display: none;
+    }
+
+    .payment-popup_mobile {
+        display: block;
+    }
+}
+
 @media (max-width: 600px) {
-    .payment {
+    .payment-popup {
         padding: 30px 34px 21px;
     }
 
-    .payment__title {
+    .payment-popup__title {
         margin-bottom: 20px;
 
         font-size: 18px;
@@ -306,7 +411,7 @@
         text-align: center;
     }
 
-    .form__payment-sums {
+    .form__payment-popup-sums {
         display: grid;
 
         grid-template-columns: repeat(2, 1fr);
@@ -314,7 +419,7 @@
         margin-bottom: 9px;
     }
 
-    .form__payment-sum {
+    .form__payment-popup-sum {
         margin-right: 5px;
         margin-bottom: 5px;
 
@@ -325,20 +430,20 @@
         border-radius: var(--border-radius-small, 15px);
     }
 
-    .form__payment-sum:nth-child(2) {
+    .form__payment-popup-sum:nth-child(2) {
         margin-right: 0;
     }
 
-    .form__payment-sum:nth-child(3) {
+    .form__payment-popup-sum:nth-child(3) {
         margin-right: 5px;
     }
 
-    .form__payment-sum:nth-child(4) {
+    .form__payment-popup-sum:nth-child(4) {
         margin-right: 0;
         margin-bottom: 5px;
     }
 
-    .form__payment-sum:nth-child(5) {
+    .form__payment-popup-sum:nth-child(5) {
         margin-right: 0;
         margin-bottom: 0;
     }
@@ -357,7 +462,7 @@
         padding-right: 35px;
     }
 
-    .input.form__payment-sum::after {
+    .input.form__payment-popup-sum::after {
         top: 19px;
         right: 15px;
 
@@ -368,36 +473,36 @@
         padding: 21px 0;
     }
 
-    .form__payment-methods {
+    .form__payment-popup-methods {
         grid-template-columns: 1fr;
     }
 
-    .form__payment-methods {
+    .form__payment-popup-methods {
         margin-bottom: 19px;
     }
 
-    .form__payment-method {
+    .form__payment-popup-method {
         margin: 0 0 4px 0;
         padding: 7px 10px 11px;
     }
 
-    .form__payment-method:last-child {
+    .form__payment-popup-method:last-child {
         margin: 0;
     }
 
-    .form__payment-method-image_card {
+    .form__payment-popup-method-image_card {
         width: 127px;
     }
 
-    .form__payment-method-image {
+    .form__payment-popup-method-image {
         height: 35px;
     }
 
-    .form__payment-method-image_sbp {
+    .form__payment-popup-method-image_sbp {
         width: 48px;
     }
 
-    .form__payment-method-image_yad {
+    .form__payment-popup-method-image_yad {
         width: 74px;
     }
 }

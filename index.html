@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="blocks/menu-mobile/css/menu-mobile.css">
     <link rel="stylesheet" href="blocks/header/css/header.css">
     <link rel="stylesheet" href="blocks/payment/css/payment.css">
+    <link rel="stylesheet" href="blocks/payment-popup/css/payment-popup.css">
     <link rel="stylesheet" href="blocks/section-title/css/section-title.css">
     <link rel="stylesheet" href="blocks/card-collect/css/card-collect.css">
     <link rel="stylesheet" href="blocks/card-slider/css/card-slider.css">
@@ -93,7 +94,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="button button-help">ПОМОЧЬ<span class="button__heart"></span></div>
+            <div class="button button-help button_show-payment">ПОМОЧЬ<span class="button__heart"></span></div>
             <div class="menu-mobile-button"></div>
         </div>
     </header>
@@ -113,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="payment hero__payment payment_stage1">
+            <div class="payment hero__payment payment_stage1 hidden">
                 <div class="payment__title">
                     <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
                 </div>
@@ -173,7 +174,7 @@
                 </div>
             </div>
         <!--Вторая платежная форма-->
-            <div class="payment payment_stage2 hidden">
+            <div class="payment payment_stage2">
                 <div class="payment__title">
                     <span class="payment__title payment__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
                 </div>
@@ -190,7 +191,7 @@
                         <div class="button form__payment-method button_outlined">
                             <div class="form__payment-method-image">
                                 <img class="form__payment-method-image-img form__payment-method-image_card"
-                                    src="./blocks/payment/images/card.png"
+                                    src="blocks/payment/images/card.png"
                                     alt="Банковская карта">
                             </div>
                             <div class="form__payment-method-label">
@@ -200,7 +201,7 @@
                         <div class="button form__payment-method button_outlined">
                             <div class="form__payment-method-image">
                                 <img class="form__payment-method-image-img form__payment-method-image_sbp"
-                                    src="./blocks/payment/images/sbp.png"
+                                    src="blocks/payment/images/sbp.png"
                                     alt="СБП платеж">
                             </div>
                             <div class="form__payment-method-label">
@@ -210,7 +211,7 @@
                         <div class="button form__payment-method button_outlined">
                             <div class="form__payment-method-image">
                                 <img class="form__payment-method-image-img form__payment-method-image_yad"
-                                    src="./blocks/payment/images/yad.png"
+                                    src="blocks/payment/images/yad.png"
                                     alt="Яндекс.Деньги">
                             </div>
                             <div class="form__payment-method-label">
@@ -299,7 +300,7 @@
                                         История
                                     </a>
                                 </div>
-                                <button class="button card-collect__button">
+                                <button class="button card-collect__button button_show-payment">
                                     Помочь<span class="button__heart"></span>
                                 </button>
                             </div>
@@ -365,7 +366,7 @@
                                         История
                                     </a>
                                 </div>
-                                <button class="button card-collect__button">
+                                <button class="button card-collect__button button_show-payment">
                                     Помочь<span class="button__heart"></span>
                                 </button>
                             </div>
@@ -431,7 +432,7 @@
                                         История
                                     </a>
                                 </div>
-                                <button class="button card-collect__button">
+                                <button class="button card-collect__button button_show-payment">
                                     Помочь<span class="button__heart"></span>
                                 </button>
                             </div>
@@ -497,7 +498,7 @@
                                         История
                                     </a>
                                 </div>
-                                <button class="button card-collect__button">
+                                <button class="button card-collect__button button_show-payment">
                                     Помочь<span class="button__heart"></span>
                                 </button>
                             </div>
@@ -563,7 +564,7 @@
                                         История
                                     </a>
                                 </div>
-                                <button class="button card-collect__button">
+                                <button class="button card-collect__button button_show-payment">
                                     Помочь<span class="button__heart"></span>
                                 </button>
                             </div>
@@ -793,13 +794,239 @@
         </div>
     </footer>
 
+    <div class="payment-popup__container hidden">
+        <!--Общая платёжная форма-->
+        <div class="payment-popup payment-popup_desktop">
+            <div class="menu-mobile__close"></div>
+            <div class="payment-popup__title">
+                <span class="payment-popup__title payment-popup__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
+            </div>
+            <form class="form payment-popup__form" name="payment-popup">
+                <div class="form__recurrence">
+                    <label class="form__radio-item">
+                        <input class="form__radio"
+                                type="radio"
+                                id="checkbox_once"
+                                name="recurrence"
+                                checked>
+                        <span class="form__radio-item_custom"></span>
+                        <span class="form__label">Помочь разово</span>
+                    </label>
+                    <label class="form__radio-item">
+                        <input class="form__radio"
+                                type="radio"
+                                id="checkbox_monthly"
+                                name="recurrence">
+                        <span class="form__radio-item_custom"></span>
+                        <span class="form__label">Помогать ежемесячно</span>
+                    </label>
+                </div>
+                <div class="form__text">
+                    <p class="form__text-p">
+                        Ваша поддержка очень важна для нашей организации и поможет нам продолжать нашу деятельность в помощи нуждающимся.
+                    </p>
+                </div>
+                <div class="form__subtitle">1. Сумма пожертвования</div>
+                <div class="form__payment-popup-sums">
+                    <div class="button form__payment-popup-sum button_outlined">300 ₽</div>
+                    <div class="button form__payment-popup-sum button_outlined">500 ₽</div>
+                    <div class="button form__payment-popup-sum button_outlined">1000 ₽</div>
+                    <div class="button form__payment-popup-sum button_outlined">3000 ₽</div>
+                    <div class="input form__payment-popup-sum">
+                        <input
+                            class="form__input form__input_sum"
+                            type="number"
+                            inputmode="numeric"
+                            pattern="\d*"
+                            placeholder="Другая сумма">
+                    </div>
+                </div>
+                <div class="form__contact-method">
+                    <div class="form__contact">
+                        <div class="form__subtitle">2. Контактная информация</div>
+                        <input
+                            class="form__input form__input_name"
+                            type="text"
+                            placeholder="Ваше имя">
+                        <input
+                            class="form__input form__input_email"
+                            type="text"
+                            placeholder="Ваш e-mail (для чека)">
+                    </div>
+                    <div class="form__method">
+                        <div class="form__subtitle">3. Способ пожертвования</div>
+                        <div class="form__method-buttons">
+                            <div class="button form__payment-popup-method button_outlined">
+                                <div class="form__payment-popup-method-image">
+                                    <img class="form__payment-popup-method-image-img form__payment-popup-method-image_card"
+                                        src="blocks/payment-popup/images/card.png"
+                                        alt="Банковская карта">
+                                </div>
+                                <div class="form__payment-popup-method-label">
+                                    Банковская карта
+                                </div>
+                            </div>
+                            <div class="button form__payment-popup-method button_outlined">
+                                <div class="form__payment-popup-method-image">
+                                    <img class="form__payment-popup-method-image-img form__payment-popup-method-image_sbp"
+                                        src="blocks/payment-popup/images/sbp.png"
+                                        alt="СБП платеж">
+                                </div>
+                                <div class="form__payment-popup-method-label">
+                                    СБП платеж
+                                </div>
+                            </div>
+                            <div class="button form__payment-popup-method button_outlined">
+                                <div class="form__payment-popup-method-image">
+                                    <img class="form__payment-popup-method-image-img form__payment-popup-method-image_yad"
+                                        src="blocks/payment-popup/images/yad.png"
+                                        alt="Яндекс.Деньги">
+                                </div>
+                                <div class="form__payment-popup-method-label">
+                                    Яндекс.Деньги
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="button form__button"
+                    type="button">
+                    СДЕЛАТЬ ПОЖЕРТВОВАНИЕ<span class="button__heart"></span>
+                </button>
+            </form>
+            <div class="form__close"></div>
+        </div>
+        <!--Первая мобильная платежная форма-->
+        <div class="payment-popup payment-popup_mobile payment-popup_stage1">
+            <div class="payment-popup__title">
+                <span class="payment-popup__title payment-popup__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
+            </div>
+            <form class="form payment-popup__form" name="payment-popup">
+                <div class="form__recurrence">
+                    <label class="form__radio-item">
+                        <input class="form__radio"
+                                type="radio"
+                                id="checkbox_once"
+                                name="recurrence"
+                                checked>
+                        <span class="form__radio-item_custom"></span>
+                        <span class="form__label">Помочь разово</span>
+                    </label>
+                    <label class="form__radio-item">
+                        <input class="form__radio"
+                                type="radio"
+                                id="checkbox_monthly"
+                                name="recurrence">
+                        <span class="form__radio-item_custom"></span>
+                        <span class="form__label">Помогать ежемесячно</span>
+                    </label>
+                </div>
+                <div class="form__text">
+                    <p class="form__text-p">
+                        Спасибо, что выбрали вариант ежемесячной помощи!
+                        <br class="form__text-br">
+                        При каждом следующем платеже вы получите e-mail уведомление.
+                    </p>
+                </div>
+                <div class="form__subtitle">Сумма пожертвования</div>
+                <div class="form__payment-popup-sums">
+                    <div class="button form__payment-popup-sum button_outlined">300 ₽</div>
+                    <div class="button form__payment-popup-sum button_outlined">500 ₽</div>
+                    <div class="button form__payment-popup-sum button_outlined">1000 ₽</div>
+                    <div class="button form__payment-popup-sum button_outlined">3000 ₽</div>
+                    <div class="input form__payment-popup-sum">
+                        <input
+                            class="form__input form__input_sum"
+                            type="number"
+                            inputmode="numeric"
+                            pattern="\d*"
+                            placeholder="Другая сумма">
+                    </div>
+                </div>
+                <button
+                    class="button form__button"
+                    type="button">
+                    Далее
+                </button>
+            </form>
+            <div class="paginatio-slidern payment-popup__navigation">
+                <ul class="pagination-slider__items">
+                    <li class="pagination-slider__item pagination-slider__item_active"></li>
+                    <li class="pagination-slider__item"></li>
+                </ul>
+            </div>
+        </div>
+        <!--Вторая мобильная платежная форма-->
+        <div class="payment-popup payment-popup_mobile payment-popup_stage2 hidden">
+            <div class="payment-popup__title">
+                <span class="payment-popup__title payment-popup__title_strong">Вы можете нам помочь!</span> Даже небольшое пожертвование сможет поддержать проект
+            </div>
+            <form class="form payment-popup__form" name="payment-popup2">
+                <input
+                    class="form__input form__input_name"
+                    type="text"
+                    placeholder="Ваше имя">
+                <input
+                    class="form__input form__input_email"
+                    type="text"
+                    placeholder="Ваш e-mail (для чека)">
+                <div class="form__payment-popup-methods">
+                    <div class="button form__payment-popup-method button_outlined">
+                        <div class="form__payment-popup-method-image">
+                            <img class="form__payment-popup-method-image-img form__payment-popup-method-image_card"
+                                src="blocks/payment-popup/images/card.png"
+                                alt="Банковская карта">
+                        </div>
+                        <div class="form__payment-popup-method-label">
+                            Банковская карта
+                        </div>
+                    </div>
+                    <div class="button form__payment-popup-method button_outlined">
+                        <div class="form__payment-popup-method-image">
+                            <img class="form__payment-popup-method-image-img form__payment-popup-method-image_sbp"
+                                src="blocks/payment-popup/images/sbp.png"
+                                alt="СБП платеж">
+                        </div>
+                        <div class="form__payment-popup-method-label">
+                            СБП платеж
+                        </div>
+                    </div>
+                    <div class="button form__payment-popup-method button_outlined">
+                        <div class="form__payment-popup-method-image">
+                            <img class="form__payment-popup-method-image-img form__payment-popup-method-image_yad"
+                                src="blocks/payment-popup/images/yad.png"
+                                alt="Яндекс.Деньги">
+                        </div>
+                        <div class="form__payment-popup-method-label">
+                            Яндекс.Деньги
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="button form__button"
+                    type="submit">
+                    ПОМОЧЬ
+                </button>
+            </form>
+            <div class="pagination-slider payment-popup__navigation">
+                <ul class="pagination-slider__items pagination-slider__items_disabled">
+                    <li class="pagination-slider__item"></li>
+                    <li class="pagination-slider__item pagination-slider__item_active"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script src="scripts/util/jquery-3.7.1.min.js"></script>
     <script src="scripts/util/owl.carousel.min.js"></script>
+    <script src="scripts/scripts.js"></script>
     <script src="blocks/menu-mobile/scripts/menu-mobile.js"></script>
     <script src="blocks/payment/scripts/payment.js"></script>
+    <script src="blocks/payment-popup/scripts/payment-popup.js"></script>
     <script>
         $(document).ready(function(){
-            const owl = $('.owl-carousel').owlCarousel(
+            const $owl = $('.owl-carousel').owlCarousel(
             {
                 items: 1,
                 margin: 26,
@@ -809,11 +1036,11 @@
                 nav: false,
             });
             $(".card-slider__button_next").click(function() {
-                owl.trigger("next.owl.carousel");
+                $owl.trigger("next.owl.carousel");
             });
 
             $(".card-slider__button_prev").click(function() {
-                owl.trigger("prev.owl.carousel");
+                $owl.trigger("prev.owl.carousel");
             });
         });
     </script>
